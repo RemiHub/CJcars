@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CJ cars</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <div id="row"> 
+        <div class="main-nav">
+            <ul>
+                <li><a href=""> Home </a></li>
+                <li><a href=""> Cars </a></li>
+                <li><a href=""> Services </a></li>
+                <li><a href=""> Contact Us </a></li>
+            </ul>
+        </div>
+
+        </div>
+            
+            <div class="first">
+            <h1>WHERE WILL YOUR JOURNEY TAKE YOU?</h1>
+            </div>
+        
+
+    </header>
+
+        
+    
+
+    <section id="services">
+
+        <div class="services1">
+
+        <p class="p1">WE OFFER GREAT<br> DEALS FOR FIRST<br> TIME DRIVERS</p>
+        <p class="p2">FREE MOT FOR THE FIRST YEAR</p>
+        <p class="p3">10% OFF YOUR SECOND CAR IF YOU BUY WITH US</p>
+
+    </section>
+
+    </div>
+
+    <section id="info">
+        <div class="banner">
+            <h1>CALL US ON 01992 712 333</h1>
+        </div>
+    </section>
+
+
+    <section id="car-lot">
+        <div class="slideshow">
+
+                <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="bmw.jpeg" style="width:100%">
+                        <div class="text">BMW</div>
+                      </div>
+                    
+                      <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="vwpolo.jpeg" style="width:100%">
+                        <div class="text">VW Polo</div>
+                      </div>
+                    
+                      <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="clio.jpeg" style="width:100%">
+                        <div class="text">Renault Clio</div>
+
+
+                        <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                              </div>
+
+
+                              <script>
+                                    var slideIndex = 0;
+                                    showSlides();
+                                    
+                                    function showSlides() {
+                                        var i;
+                                        var slides = document.getElementsByClassName("mySlides");
+                                        for (i = 0; i < slides.length; i++) {
+                                            slides[i].style.display = "none";
+                                        }
+                                        slideIndex++;
+                                        if (slideIndex> slides.length) {slideIndex = 1}
+                                        slides[slideIndex-1].style.display = "block";
+                                        setTimeout(showSlides, 8000); // Change image every 7 seconds
+                                    }
+                                    </script>
+
+
+        </div>
+    </section>
+
+    <footer>
+        
+<br>
+
+
+    </footer>
+
+
+    
+    
+</body>
+</html>
