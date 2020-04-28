@@ -1,42 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 *
 {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-header{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(road.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
+
+body{
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
 }
 
-.main-nav{
+header{
+  /* display: flex; */
+    width: 100;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(cnj-logo.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+    border-bottom: 1px solid #fff;
+    /* margin-bottom: 10vh; */
+}
+
+
+
+/* .main-nav{
     text-align:right;
-    list-style: none;
+    list-style: none; */
     
     /*margin-top: 10px;*/
-}
+/* } */
 
 
 
 
 .main-nav li{
-    /*float:right;*/
+
+    
     /*text-align: center;*/
     display: inline-block;
     /*text-decoration: none;*/
-    padding: 5px 20px;
-    margin-top: 10px;
+    padding: 5px 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     /*overflow: hidden; */
-    
+    position: sticky;
     margin-left: 10px;
     /*background-color:tan;*/
     
 }
 
 .main-nav li a{
-    color:white;
+    color:black;
     text-decoration: none;
     padding: 5px 10px;
     font-size:25px;
@@ -45,86 +68,102 @@ header{
 
 .main-nav li a:hover{
     /*border: 1px solid white;*/
-    opacity: 0.7;
+    opacity: 0.3;
 }
 
 #row {
     max-width: 100%;
     margin: auto;
-    
-    
-}
-
-body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-.first{
-    position: absolute;
-    width: 100%;
-    height: 0px;
-    
-    margin-top: 0;
-        
 }
 
 /*h1 is global*/
 
 .first h1{
-    margin-top: 270px;
-    text-transform: uppercase;
+    margin-top:20%;
     color: white;
     font-size: 70px;
+    justify-content: center;
     text-align: center;
+    /* left: 3%; */
+    /* margin: 0; */
+    position: relative; 
+    /* top: 50%; */
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
+
+
+        
 
 #services{
-    background-color: white;
+    background-image: url(road1.jpg);
+    background-position: center;
+    background-image: fixed;
     width: 100%;
-    height: 10%;
-    overflow: hidden;
-    margin-bottom: 200px;
+    height: 80vh;
+    background-size: cover;
+    background-attachment: fixed;
+    /* justify-content: space-between; */
 }
 
-.p1{
-    text-transform: uppercase;
-    color: gray;
-    font-size: 40px;
-    text-align: left;
-    width: 30%;
-    float: left;
-    margin-left: 10px;
-    padding: 20px 30px;
-    /*height: 10vw;*/
 
-}
 
-.p2{
-    text-transform: uppercase;
-    color: gray;
-    font-size: 40px;
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed 
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  } */
+
+#p1{
+    display: flex;
+    color: rgb(24, 42, 59);
+    font-size: 50px;
+    font-weight: 900;
+    /* justify-content: center; */
     text-align: center;
-    width:26%;
+    border-right: 5px solid gray;
+    width: 33%;
+    height: 80vh;
     float: left;
-    padding: 20px 30px;
+    padding: 2em;
+    /*height: 10vw;*/
 }
 
-.p3{
-    text-transform: uppercase;
-    color: gray;
-    font-size: 40px;
-    text-align: right;
-    width: 26%;
+#p2{
+    display: flex;
+    color: rgb(24, 42, 59);
+    font-size: 50px;
+    font-weight: 900;
+    /* justify-content: space-evenly; */
+    text-align: center;
+    width:33%;
+    height: 80vh;
+    float: left;
+    padding: 2em;
+    border-right: 5px solid gray;
+}
+
+#p3{
+    display: flex;
+    /* justify-content: center; */
+    color: rgb(24, 42, 59);
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    width: 33%;
+    height: 80vh;
     float:left;
-    padding: 20px 30px;
+    padding: 2em;
 }
 
 #info{
-    background: darkkhaki;
+    background: black;
     padding: 40px;
     border: 1px solid black;
-        
+    color: white;
+    
 }
 
 .banner{
@@ -134,18 +173,22 @@ body{
 }
 
 #car-lot{
-    /*background: url('roadlines.jpg') no-repeat;*/
-      background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(roadlines.jpg);
-      background-size: cover;
-      position: relative;
-      height: 500px;
+    /*background: url('roadlines.jpg') no-repeat; 
+    linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(roadlines.jpg);*/
+      background-color: white;
+      
+      
+      
 }
 
 .slideshow {
-    max-width: 700px;
-    position: relative;
-    margin: auto;
-    padding: 40px;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 20px;
+    
 }
 
 .numbertext {
@@ -179,7 +222,93 @@ body{
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
+    
   }
+
+  #footer {
+    background-color: black;
+    height: 25vh;
+    color: white;
+    top: 10px;
+    
+    
+}
+
+
+.flip-box {
+    background-color: transparent;
+    width: 100%;
+    height: 80px;
+    perspective: 1000px;
+  }
+  
+  .flip-box-inner {
+    
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.9s ease-in-out;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateX(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .flip-box-back {
+    background-color: #000;
+    color: #fff;
+    font-size: 30px;
+    transform: rotateX(180deg);
+  }
+
+  .flip-box{
+    cursor: pointer;
+  }
+
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    width: 100%;
+    
+  }
+
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    margin-bottom: 10px;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  
+
+  
   
   @-webkit-keyframes fade {
     from {opacity: .4}
@@ -191,7 +320,27 @@ body{
     to {opacity: 1}
   }
 
-  footer{
-      background-color: darkkhaki;
+  @media screen and (max-width: 800px){
+    /* header {
+      
+      background-image: url(cnj-logo.jpg);
+    } */
+    #p1,#p2,#p3{
+      /* flex: 50%; */
+      /* max-width: 100%; */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    
+
+    #row{
+      flex: 100%;
+      max-width: 100%;
+    }
+
   }
+
+  
 
