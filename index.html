@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CJ cars</title>
     <link  rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
 </head>
 <body>
 
@@ -23,19 +24,96 @@
 
   <header id="header">
 
+    <div class="search-box">
+      <form action="/action_page.php" class="search-bar">
+        <input type="text" placeholder="Search.." name="search" class="search-bar-box">
+      </form>
+
+      <form action="/action_page.php" class="car-make">
+        <label for="cars">CAR MAKE:</label>
+        <select name="cars" id="cars">
+          <option value="VW">VW</option>
+          <option value="BMW">BMW</option>
+          <option value="MERCEDES">MERCEDES</option>
+          <option value="AUDI">AUDI</option>
+        </select>
+      </form>
+        
+      <!-- <div class="car-make">CAR MAKE</div> -->
+
+      <form action="/action_page.php" class="car-make">
+        <label for="cars">CAR MODEL:</label>
+        <select name="cars" id="cars">
+          <option value="golf">Golf GTI</option>
+          <option value="325ci">Saab</option>
+          <option value="merc e">e350</option>
+          <option value="audi s3">Audi s3</option>
+        </select>
+      </form>
+
+      <!-- <div class="car-model">CAR MODEL</div> -->
+      <form action="/action_page.php" class="car-make">
+        <label for="cars">MIN:</label>
+        <select name="min" id="cars">
+          <option value="one">£1000</option>
+          <option value="two">£2000</option>
+          <option value="five">£5000</option>
+          <option value="ten">£10000</option>
+        </select>
+      </form>
+      <!-- <div class="min">MIN</div> -->
+
+      <!-- <div class="max">MAX</div> -->
+      <form action="/action_page.php" class="car-make">
+        <label for="cars">MAX:</label>
+        <select name="max" id="cars">
+          <option value="one">£1000</option>
+          <option value="two">£2000</option>
+          <option value="five">£5000</option>
+          <option value="ten">£10000</option>
+        </select>
+      </form>
+
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+
             
             <div class="first">
-            <h1 class="firsty">WHERE WILL YOUR JOURNEY TAKE YOU?</h1>
+            <h1 class="firsty">WHERE WILL YOUR NEXT CAR TAKE YOU?</h1>
             </div>
 
     </header>
+
+
+    <section>
+      <div class="row"> 
+        <div class="column">
+          <img src="hatchback.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="saloon.jpg" style="width:100%">
+        </div>  
+     
+
+        <!--
+        <div class="column">
+          <img src="hatchback.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="saloon.jpg" style="width:100%">
+        </div> -->
+      </div>
+      
+
+    </section>
+
     
 
     <section id="services">
 
         <div class="services1">
 
-        <p id="p1">WE OFFER GREAT<br> DEALS FOR FIRST<br> TIME DRIVERS</p>
+        <p id="p1">WE OFFER GREAT DEALS<br> FOR FIRST<br> TIME DRIVERS</p>
         <p id="p2">FREE MOT FOR THE FIRST YEAR</p>
         <p id="p3">10% OFF YOUR SECOND CAR IF YOU BUY WITH US</p>
       </div>
@@ -61,25 +139,7 @@
         </div>!-->
     </section>
 
-    <section>
-      <div class="row"> 
-        <div class="column">
-          <img src="hatchback.jpg" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="saloon.jpg" style="width:100%">
-        </div>  
-        <div class="column">
-          <img src="hatchback.jpg" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="saloon.jpg" style="width:100%">
-        </div>
-      </div>
-      
-
-    </section>
-
+    
 
     <!-- <section id="car-lot">
         <div class="slideshow">
@@ -127,7 +187,16 @@
     </section>
 
 
-    <footer id="footer">Contact US</footer>
+    <footer id="footer">
+      Contact US <br>
+      Address 1 <br>
+      Address 2 <br>
+      Town  <br>
+      City  <br>
+      PC  <br>
+      &copy; <br>
+      <i class="fab fa-facebook-f"></i>
+      </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
