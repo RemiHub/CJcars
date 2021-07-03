@@ -1,65 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
-*
-{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-
-body{
-  font-family: 'Quicksand', sans-serif;
+body {
+  font-family: "Quicksand", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
-header{
+/* main page  */
+
+header {
   /* display: flex; */
-    width: 100%;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(cnj-logo.jpg);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-    height: 100vh;
-    border-bottom: 1px solid #fff;
-    /* margin-bottom: 10vh; */
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(cnj-logo.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  height: 100vh;
+  border-bottom: 1px solid #fff;
+  /* margin-bottom: 10vh; */
 }
 
-.search-box{
+.search-box {
   margin: 10% auto;
   width: 65%;
   height: 8%;
   background-color: white;
   opacity: 0.9;
   border-radius: 10px;
-  position:relative;
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   transform: translateY(-50%);
   text-align: center;
   padding: 10px;
-
 }
 
-.search-bar{
+.search-bar {
   float: left;
   padding: 15px;
 }
 
-.search-bar-box{
+.search-bar-box {
   margin: auto auto;
   padding: 4px;
   font-size: 2em;
 }
 
-.search-box button{
+.search-box button {
   float: right;
   padding: 20px 10px;
   margin-top: 2px;
@@ -70,122 +70,303 @@ header{
   cursor: pointer;
 }
 
-.car-make{
-  vertical-align:top;
+.car-make {
+  vertical-align: top;
   /* display:inline-block;  */
   padding: 15px 10px;
   font-size: 1.5em;
   float: left;
 }
 
-#cars{
+#cars {
   font-size: 1em;
   padding: 10px;
 }
 
 /* need to sort options in ascending alphabetical order */
-option{
+option {
   font-size: 1em;
 }
 
-.car-model{
-  vertical-align:top;
-    display:inline-block; 
-    padding: 10px;
+.car-model {
+  vertical-align: top;
+  display: inline-block;
+  padding: 10px;
 }
 
-.min{
-  vertical-align:top;
-    display:inline-block; 
-    padding: 10px;
+.min {
+  vertical-align: top;
+  display: inline-block;
+  padding: 10px;
 }
 
-.max{
-  vertical-align:top;
-    display:inline-block; 
-    padding: 10px;
+.max {
+  vertical-align: top;
+  display: inline-block;
+  padding: 10px;
 }
-
-
-
 
 /* .main-nav{
     text-align:right;
     list-style: none; */
-    
-    /*margin-top: 10px;*/
+
+/*margin-top: 10px;*/
 /* } */
 
-
-
-
-.main-nav li{
-
-    
-    /*text-align: center;*/
-    display: inline-block;
-    /*text-decoration: none;*/
-    padding: 5px 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    /*overflow: hidden; */
-    position: sticky;
-    margin-left: 10px;
-    /*background-color:tan;*/
-    
+.main-nav li {
+  /*text-align: center;*/
+  display: inline-block;
+  /*text-decoration: none;*/
+  padding: 5px 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /*overflow: hidden; */
+  position: sticky;
+  margin-left: 10px;
+  /*background-color:tan;*/
 }
 
-.main-nav li a{
-    color:black;
-    text-decoration: none;
-    padding: 5px 180px;
-    font-size: 3em;
-    font-weight: bolder;
-    
+.main-nav li a {
+  color: black;
+  text-decoration: none;
+  padding: 5px 180px;
+  font-size: 3em;
+  font-weight: bolder;
 }
 
-.main-nav li a:hover{
-    /*border: 1px solid white;*/
-    opacity: 0.3;
+.main-nav li a:hover {
+  /*border: 1px solid white;*/
+  opacity: 0.3;
+}
+
+.clicked{
+  /* text-decoration: none; */
+  /* color: red; */
+  opacity: 0.2;
 }
 
 #row {
-    max-width: 100%;
-    margin: auto;
+  max-width: 100%;
+  margin: auto;
 }
+
+/* description card in car section */
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  width: 100%;
+  height: 80vh;
+}
+
+
+
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 20px;
+  margin-bottom: 15px;
+  /* border: 5px solid rgb(24, 42, 59); */
+  /* will need to change this back to  */
+}
+
+.column-text-container {
+  float: right;
+  margin-top: 50px;
+  padding: 50px;
+  vertical-align: middle;
+  width: 90%;
+  height: 90%;
+  border-radius: 15px;
+  /* border: 1px solid rgb(24, 42, 59); */
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.4);
+}
+
+.column img {
+  margin-top: 50px;
+  vertical-align: middle;
+  width: 90%;
+  height: 90%;
+  border-radius: 15px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 10px 30px 30px rgba(0, 0, 0, 0.3), 0 0 50px rgba(0, 0, 0, 1) inset;
+}
+
+#details {
+  font-size: 3em;
+}
+
+#details-more {
+  font-size: 2em;
+}
+
+#status {
+  font-size: 2em;
+  margin-top: 3%;
+}
+
+#price {
+  margin-top: 30%;
+  border-top: 2px solid rgb(24, 42, 59);
+  font-size: 4em;
+}
+
+#description {
+  font-size: 1.3em;
+}
+
+/* slideshow  */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000vw;
+  /* max-height: 50vh; */
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.under-row-section{
+  background-color: darkgrey;
+  height: 25vh;
+
+}
+
+
+
+/* services page/section  */
 
 /*h1 is global*/
 
-.first h1{
-    margin-top:25%;
-    color: white;
-    font-size: 4em;
-    justify-content: center;
-    text-align: center;
-    /* left: 3%; */
-    /* margin: 0; */
-    position: relative; 
-    /* top: 50%; */
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+.first h1 {
+  margin-top: 25%;
+  color: white;
+  font-size: 4em;
+  justify-content: center;
+  text-align: center;
+  /* left: 3%; */
+  /* margin: 0; */
+  position: relative;
+  /* top: 50%; */
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-
-        
-
-#services{
-    background-image: url(road1.jpg);
-    background-position: center;
-    background-image: fixed;
-    width: 100%;
-    height: 90vh;
-    background-size: cover;
-    background-attachment: fixed;
-    /* justify-content: space-between; */
+.first span {
+  color: rgb(223, 19, 19);
 }
 
 
 
+#services {
+  background-image: url(road1.jpg);
+  background-position: center;
+  background-image: fixed;
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-attachment: fixed;
+  /* justify-content: space-between; */
+}
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed 
 @media only screen and (max-device-width: 1366px) {
@@ -194,260 +375,457 @@ option{
     }
   } */
 
-#p1{
-    display: flex;
-    color: rgb(24, 42, 59);
-    font-size: 3em;
-    font-weight: 900;
-    /* justify-content: center; */
-    text-align: center;
-    border-right: 1px solid rgb(24, 42, 59);
-    width: 33%;
-    height: 90vh;
-    float: left;
-    padding: 2em;
-    /*height: 10vw;*/
+#p1 {
+  
+  display: flex;
+  color: rgb(24, 42, 59);
+  font-size: 3em;
+  font-weight: 900;
+  /* justify-content: center; */
+  text-align: center;
+  border-right: 1px solid rgb(24, 42, 59);
+  width: 33%;
+  height: 90vh;
+  float: left;
+  padding: 2em;
+
+  /*height: 10vh;*/
 }
 
-#p2{
-    display: flex;
-    color: rgb(24, 42, 59);
-    font-size: 3em;
-    font-weight: 900;
-    /* justify-content: space-evenly; */
-    text-align: center;
-    width:33%;
-    height: 90vh;
-    float: left;
-    padding: 2em;
-    border-right: 1px solid rgb(24, 42, 59);
+/* .p1-img{
+  display: flex;
+  width: 80%;
+  margin-top: 40%;
+  height: 60vh;
+  float: left;
+} */
+
+
+#p2 {
+  display: flex;
+  color: rgb(24, 42, 59);
+  font-size: 3em;
+  font-weight: 900;
+  /* justify-content: space-evenly; */
+  text-align: center;
+  width: 33%;
+  height: 90vh;
+  float: left;
+  padding: 2em;
+  border-right: 1px solid rgb(24, 42, 59);
 }
 
-#p3{
-    display: flex;
-    /* justify-content: center; */
-    color: rgb(24, 42, 59);
-    font-size: 3em;
-    font-weight: 900;
-    text-align: center;
-    width: 33%;
-    height: 90vh;
-    float:left;
-    padding: 2em;
+#p3 {
+  display: flex;
+  /* justify-content: center; */
+  color: rgb(24, 42, 59);
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  width: 33%;
+  height: 90vh;
+  float: left;
+  padding: 2em;
 }
 
-#info{
-    background: black;
-    padding: 40px;
-    border: 1px solid black;
-    color: white;
-    
+/* flip info design  */
+
+#info {
+  background: black;
+  padding: 40px;
+  border: 1px solid black;
+  color: white;
 }
 
-.banner{
-    text-transform: uppercase;
-    font-size: 40px;
-    text-align: center;
+.banner {
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
 }
 
-#car-lot{
-    /*background: url('roadlines.jpg') no-repeat; 
+#car-lot {
+  /*background: url('roadlines.jpg') no-repeat; 
     linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(roadlines.jpg);*/
-      background-color: white;
+  background-color: white;
 }
 
 .slideshow {
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    padding: 20px;
-    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 20px;
 }
 
 .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
 
-  
-.dot {
-    cursor:pointer;
-    height: 13px;
-    width: 13px;
-    margin: 0 2px;
-    background-color:black;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    
-  }
+/* .dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
-  .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-    
-  }
+.dot:hover {
+  background-color: #717171;
+} */
 
-  #footer {
-    background-color: black;
-    height: 25vh;
-    color: white;
-    top: 10px;
-    
-    
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 
+
 .flip-box {
-    background-color: transparent;
+  background-color: transparent;
+  width: 100%;
+  height: 5em;
+  perspective: 1000px;
+  padding: 10px;
+}
+
+.flip-box-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+}
+
+.flip-box-back {
+  background-color: black;
+  color: #fff;
+  font-size: 30px;
+  transform: rotateX(180deg);
+}
+
+.flip-box {
+  cursor: pointer;
+}
+
+
+
+
+
+/* car page  */
+
+.nav-space{
+  height: 4vh;
+  background-color: red;
+}
+
+
+.grid-container-cars{
+  /* margin: 0 auto; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 50px;
+    grid-gap: 100px;
     width: 100%;
-    height: 5em;
-    perspective: 1000px;
-    padding: 10px;
-  }
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  height: 25em;
+    width: 25em;
+  border-radius: 15px;
+
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.4);
+}
+
+.grid-item2{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  height: 25em;
+    width: 25em;
+  border-radius: 15px;
+  border-top-left-radius: 50px; 
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.4);
+}
+
+.zoom-left:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5) translate(20%); 
+  /* margin-left: 150px; */
   
-  .flip-box-inner {
-    
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.9s ease-in-out;
-    transform-style: preserve-3d;
-    
-  }
-  
-  .flip-box:hover .flip-box-inner {
-    transform: rotateX(180deg);
-  }
-  
-  .flip-box-front, .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+}
 
-  }
-  
-  .flip-box-front {
-    background-color: black;
-    color: white;
-    font-size: 30px;
-  }
-  
-  .flip-box-back {
-    background-color: black;
-    color: #fff;
-    font-size: 30px;
-    transform: rotateX(180deg);
-  }
+.zoom-middle:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  /* margin: 200px; */
+}
 
-  .flip-box{
-    cursor: pointer;
+.zoom-right:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5) translate(-20%); 
+  /* margin-right: 200px; */
+}
+
+.grid-details-container{
+  max-height: 50%;
+}
+
+#grid-details{
+  font-size: 1em;
+}
+
+#grid-details-more{
+  font-size: 0.7em;
+}
+
+#grid-status{
+font-size: 0.8em;
+}
+
+#grid-description{
+  font-size: 0.5em;
+}
+
+#grid-price{
+  margin-top: 8%;
+  border-top: 2px solid rgb(24, 42, 59);
+  font-size: 0.9em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer section */
+
+/* .fab.fa-facebook-f {
+  font-size: 4em;
+  display: flex;
+  justify-content: space-between;
+  top: 20%;
+  color: white;
+  left: 5%;
+  /* text-align: left; */
+  /* padding: 20px 0; */
+  /* margin-top: 10px; */
+  /* padding: 0 10px; */
+  /* margin: 0; */
+  /* position: absolute; */
+/* }  */
+
+
+
+#footer {
+  border-top: 2px solid white;
+  height: 30vh;
+  font-size: 1.2em;
+  background-color: black;
+  position: relative;
+  z-index: -1;
+}
+
+.address h3{
+  left: 5%;
+  justify-content: center;
+  text-align: left;
+  position: absolute;
+  padding: 10px;
+  bottom: 9em;
+}
+
+.address{
+  left: 25%;
+  display: flex;
+  top: 20px;
+  justify-content: center;
+  text-align: left;
+  position: absolute;
+  padding: 20px 30px;
+  /* height: 25vh; */
+  color: white;
+}
+
+.opening-hours{
+  display: flex;
+  top: 20px;
+  justify-content: center;
+  text-align: left;
+  left: 5%;
+  position: absolute;
+  padding: 20px 30px;
+  color: white;
+}
+
+.opening-hours h3{
+  left: 7%;
+  justify-content: center;
+  text-align: left;
+  position: absolute;
+  padding: 10px;
+  bottom: 9em;
+}
+
+.footer-menu{
+  display: flex;
+  top: 20px;
+  justify-content: center;
+  text-align: left;
+  left: 50%;
+  position: absolute;
+  padding: 20px 30px;
+  color: white;
+}
+
+.footer-menu h3{
+  left: 10%;
+  justify-content: center;
+  text-align: left;
+  position: absolute;
+  padding: 10px;
+  bottom: 9em;
+}
+
+.footer-contact{
+  display: flex;
+  top: 20px;
+  justify-content: center;
+  text-align: left;
+  left: 75%;
+  position: absolute;
+  padding: 20px 30px;
+  color: white;
+}
+
+.footer-contact h3{
+  left: 5%;
+  justify-content: center;
+  text-align: left;
+  position: absolute;
+  padding: 10px;
+  bottom: 9em;
+}
+
+.fa-facebook-f{
+  left: 5%;
+  justify-content: center;
+  text-align: left;
+  position: absolute;
+  padding: 10px;
+  bottom: 9em;
+  color: rgb(38, 62, 197);
+  cursor: pointer;
+}
+
+/* .favicons{
+  left: 10%;
+  justify-content: center;
+  text-align: left;
+  position: absolute;
+  padding: 10px;
+  bottom: 9em;
+} */
+
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
   }
-
-  .row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-    width: 100%;
-    height: 80vh;
+  to {
+    opacity: 1;
   }
+}
 
-  .column {
-    -ms-flex: 50%; /* IE10 */
-    flex: 50%;
-    max-width: 50%;
-    padding: 0 20px;
-    margin-bottom: 15px;
-    
-    /* will need to change this back to  */
+@keyframes fade {
+  from {
+    opacity: 0.4;
   }
-
-  .column img {
-    margin-top: 50px;
-    
-    vertical-align: middle;
-    width: 90%;
-    height: 90%;
-    border-radius: 15px;
-
-    position:relative;
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-            box-shadow: 10px 30px 30px rgba(0, 0, 0, 0.3), 0 0 50px rgba(0, 0, 0, 1) inset;
+  to {
+    opacity: 1;
   }
+}
 
-  .fab.fa-facebook-f{
-    font-size: 40px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    /* padding: 20px 0; */
-    /* margin-top: 10px; */
-    padding: 0 10px;
-    /* margin: 0; */
-    position: absolute;
-  }
-
-  #footer{
-    /* top: 150px; */
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 20px 30px;
-    position: relative;
-  }
-
-  
-
-  
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
-  @media screen and (max-width: 800px){
-    /* header {
+@media screen and (max-width: 800px) {
+  /* header {
       
       background-image: url(cnj-logo.jpg);
     } */
-    #p1,#p2,#p3{
-      /* flex: 50%; */
-      /* max-width: 100%; */
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    
-
-    #row{
-      flex: 100%;
-      max-width: 100%;
-    }
-
+  #p1,
+  #p2,
+  #p3 {
+    /* flex: 50%; */
+    /* max-width: 100%; */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
   }
 
-  
-
+  #row {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

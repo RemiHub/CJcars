@@ -13,8 +13,8 @@
   <div id="row"> 
     <div class="main-nav">
         <ul>
-            <li><a href=""> Home </a></li>
-            <li><a href=""> Cars </a></li>
+            <li><a class="clicked" href="index.html"> Home </a></li>
+            <li><a href="cars.html"> Cars </a></li>
             <li><a href=""> Services </a></li>
             <li><a href=""> Contact Us </a></li>
         </ul>
@@ -26,7 +26,7 @@
 
     <div class="search-box">
       <form action="/action_page.php" class="search-bar">
-        <input type="text" placeholder="Search.." name="search" class="search-bar-box">
+        <input type="text" placeholder="Search cars..." name="search" class="search-bar-box">
       </form>
 
       <form action="/action_page.php" class="car-make">
@@ -79,7 +79,7 @@
 
             
             <div class="first">
-            <h1 class="firsty">WHERE WILL YOUR NEXT CAR TAKE YOU?</h1>
+            <h1 class="firsty">WHERE WILL YOUR NEXT CAR TAKE YOU? <br> CALL US NOW TO FIND OUT ON <span>01992 712 333</span></h1>
             </div>
 
     </header>
@@ -88,10 +88,60 @@
     <section>
       <div class="row"> 
         <div class="column">
-          <img src="hatchback.jpg" style="width:100%">
+
+          <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="hatchback.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="bmw.jpeg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="cars1.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+          
         </div>
         <div class="column">
-          <img src="saloon.jpg" style="width:100%">
+          <div class="column-text-container">
+          
+          <div id="details">VW Golf GTI 2015 2.0L <br> </div>
+          <div id="details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
+          <div id="status">SOLD</div>
+          <br>
+          <div id="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Enim, voluptates. Voluptatibus, velit iusto sed animi aliquam fugit dignissimos 
+            voluptate magni tempora corporis commodi, cumque aspernatur eveniet facere esse, 
+            placeat eaque est soluta architecto similique sit ex. Asperiores laboriosam deleniti 
+            nemo dolore tempore autem aperiam dolores libero sunt. Quo, pariatur totam.</div>
+
+          <div id="price">£16,000</div>
+        </div>
+
+          <!-- <img src="saloon.jpg" style="width:100%"> -->
         </div>  
      
 
@@ -103,6 +153,8 @@
           <img src="saloon.jpg" style="width:100%">
         </div> -->
       </div>
+
+      <div class="under-row-section"></div>
       
 
     </section>
@@ -112,8 +164,12 @@
     <section id="services">
 
         <div class="services1">
+          
+        <p id="p1"> WE OFFER GREAT DEALS<br> FOR FIRST<br> TIME DRIVERS <br> 
+          
+           </p>
+           
 
-        <p id="p1">WE OFFER GREAT DEALS<br> FOR FIRST<br> TIME DRIVERS</p>
         <p id="p2">FREE MOT FOR THE FIRST YEAR</p>
         <p id="p3">10% OFF YOUR SECOND CAR IF YOU BUY WITH US</p>
       </div>
@@ -187,15 +243,70 @@
     </section>
 
 
+    <!-- footer  -->
+
+
     <footer id="footer">
-      Contact US <br>
-      Address 1 <br>
-      Address 2 <br>
-      Town  <br>
-      City  <br>
-      PC  <br>
-      &copy; <br>
-      <i class="fab fa-facebook-f"></i>
+      <div class="address">
+        <h3>LOCATION</h3> <br>
+        <br>
+        Unit 23a Monro Industrial Estate<br>
+        Station Approach <br>
+        Waltham Cross  <br>
+        EN8 7LX  <br>
+        <br>
+        <br>
+        &copy; <br>
+      </div>
+
+        
+        <div class="opening-hours"> 
+          <h3>OPENING HOURS</h3> <br> 
+          <br>
+          MONDAY: 9:00 - 19:00 <br>
+          TUESDAY: 9:00 - 19:00 <br>
+          WEDNESDAY: 9:00 - 19:00 <br>
+          THURSDAY: 9:00 - 19:00 <br>
+          FRIDAY: 9:00 - 19:00 <br> 
+          SATURDAY: 10:00 - 16:00 <br>
+          SUNDAY: CLOSED <br>
+        </div>
+
+        <div class="footer-menu"> 
+          <h3>MENU</h3> <br> 
+          <br>
+          HOME <br>
+          <br>
+          CARS <br>
+          <br>
+          SERVICES <br>
+          <br>
+          CONTACT US <br>
+        </div>
+
+        <div class="footer-contact"> 
+          <h3>CONTACT</h3> <br>
+          <br>
+          <br>
+          
+             CAVENCO <!--needs to be a link-->
+            <br>
+            <br>
+
+            TEL:   01992 712 333 <br>
+          <br>
+          EMAIL:   C-J-CARSALES@OUTLOOK.COM <br>
+          <br> <i class="fab fa-facebook-f"></i> <br>
+         
+        
+       
+      </div>
+
+        
+
+
+      
+      
       </footer>
 
 
