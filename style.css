@@ -295,12 +295,16 @@ option {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 0 5px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  padding: 0 5px;
 }
+
+
+
 
 .active, .dot:hover {
   background-color: #717171;
@@ -638,6 +642,34 @@ font-size: 0.8em;
   border-top: 2px solid rgb(24, 42, 59);
   font-size: 0.9em;
 }
+
+
+
+/* contact page  */
+
+#map-section{
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+#map {
+  height: 400px;
+  /* The height is 400 pixels 
+  width: 100%;
+  /* The width is the width of the web page 
+} */
 
 
 
