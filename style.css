@@ -30,6 +30,25 @@ header {
   /* margin-bottom: 10vh; */
 }
 
+
+.first h1 {
+  margin-top: 25%;
+  color: white;
+  font-size: 4em;
+  justify-content: center;
+  text-align: center;
+  /* left: 3%; */
+  /* margin: 0; */
+  position: relative;
+  /* top: 50%; */
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.first span {
+  color: rgb(223, 19, 19);
+}
+
 .search-box {
   margin: 10% auto;
   width: 65%;
@@ -282,13 +301,13 @@ option {
 }
 
 /* Number text (1/3 etc) */
-.numbertext {
+/* .numbertext {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
-}
+} */
 
 /* The dots/bullets/indicators */
 .dot {
@@ -302,9 +321,6 @@ option {
   transition: background-color 0.6s ease;
   padding: 0 5px;
 }
-
-
-
 
 .active, .dot:hover {
   background-color: #717171;
@@ -337,28 +353,9 @@ option {
 
 
 
+
+
 /* services page/section  */
-
-/*h1 is global*/
-
-.first h1 {
-  margin-top: 25%;
-  color: white;
-  font-size: 4em;
-  justify-content: center;
-  text-align: center;
-  /* left: 3%; */
-  /* margin: 0; */
-  position: relative;
-  /* top: 50%; */
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.first span {
-  color: rgb(223, 19, 19);
-}
-
 
 
 #services {
@@ -452,22 +449,22 @@ option {
     linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(roadlines.jpg);*/
   background-color: white;
 }
-
+/* 
 .slideshow {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
   padding: 20px;
-}
-
+} */
+/* 
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
-}
+} */
 
 /* .dot {
   cursor: pointer;
@@ -663,26 +660,6 @@ font-size: 0.8em;
 
 
 
-/* 
-#map {
-  height: 400px;
-  /* The height is 400 pixels 
-  width: 100%;
-  /* The width is the width of the web page 
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -840,6 +817,497 @@ font-size: 0.8em;
     opacity: 1;
   }
 }
+
+
+
+/* media queries  */
+
+/* smallest screens  */
+/* @media only screen and (min-width: 250px) and (max-width: 364px){} */
+
+
+/* mobiles use  */
+@media only screen and (min-width: 365px) and (max-width: 767px){
+
+  .main-nav li {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 1px;
+  }
+  
+  .main-nav li a {
+    padding: 4px 4px;
+    font-size: 1em;
+  }
+  
+
+  .first h1 {
+    margin-top: 25%;
+    font-size: 1.8em;
+  }
+
+
+  .search-box {
+    margin-top: 55%;
+    margin-bottom: 25%;
+    width: 75%;
+    height: 28%;
+    text-align: left;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+    padding: 5px 1px 0 auto;    
+  }
+  
+  .search-bar {
+    float: left;
+    padding: 5px;
+  }
+  
+  .search-bar-box {
+    margin: auto;
+    padding: 3px 58% 3px 5px;
+    font-size: 0.8em;
+  }
+  
+  .search-box button {
+    /* margin: auto auto; */
+    padding: 5px 5px;          /*top right bottom left*/
+    /* margin-top: 1px; */
+    /* margin-right: 5px; */
+    margin: 10px 5px 0 auto;
+    font-size: 0.8em;
+    cursor: pointer;
+  }
+  
+  .car-make {
+    vertical-align: top;
+    /* display:inline-block;  */
+    padding: 5px 8px;
+    font-size: 0.9em;
+    float: left;
+  }
+  
+  #cars {
+    font-size: 0.9em;
+    padding: 5px;
+  }
+  
+  /* need to sort options in ascending alphabetical order */
+  option {
+    font-size: 0.8em;
+  }
+  
+  .car-model {
+    vertical-align: top;
+    display: inline-block;
+    padding: 5px;
+  }
+  
+  .min {
+    vertical-align: top;
+    display: inline-block;
+    padding: 5px;
+  }
+  
+  .max {
+    vertical-align: top;
+    display: inline-block;
+    padding: 5px;
+  }
+
+
+  
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  width: 100%;
+  height: 80vh;
+}
+
+
+
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 10px;
+  margin-bottom: 15px;
+  
+}
+
+.column-text-container {
+  margin-top: 1px;
+  padding: 10px;
+  vertical-align: middle;
+  width: 100%;
+  height: 32vh;
+  border-radius: 10px;
+  /* border: 1px solid rgb(24, 42, 59); */
+  position: relative;
+  
+}
+
+.column img {
+  margin-top: 40px;
+  vertical-align: middle;
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  position: relative;
+}
+
+#details {
+  font-size: 1.3em;
+}
+
+#details-more {
+  font-size: 0.8em;
+}
+
+#status {
+  font-size: 0.8em;
+  margin-top: 3%;
+}
+
+#price {
+  margin-top: 6%;
+  border-top: 0.5px solid rgb(24, 42, 59);
+  font-size: 1em;
+}
+
+#description {
+  font-size: 0.5em;
+}
+
+/* slideshow  */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000vw;
+  /* max-height: 50vh; */
+  position: relative;
+  margin: auto;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 8px;
+  padding: 2px 12px;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 6px;
+  width: 6px;
+  margin: 0 4px;
+  padding: 0 3px;
+}
+
+.under-row-section{
+  height: 12vh;
+}
+
+
+
+
+
+/* service page/section  */
+
+
+
+#services {
+  height: 60vh;
+  
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed 
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  } */
+
+#p1 {
+  font-size: 0.8em;
+  width: 33%;
+  height: 60vh;
+  padding: 1em;
+}
+
+
+#p2 {
+  font-size: 0.8em;
+  width: 33%;
+  height: 60vh;
+  float: left;
+  padding: 1em;
+}
+
+#p3 {
+  font-size: 0.8em;
+  width: 33%;
+  height: 60vh;
+  padding: 1em;
+}
+
+
+/* flip info design  */
+
+#info {
+  background: black;
+  padding: 10px;
+  border: 1px solid black;
+  color: white;
+}
+
+.banner {
+  font-size: 5px;
+}
+/* 
+#car-lot {
+  background-color: white;
+} */
+
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: 2em;
+  perspective: 1000px;
+  padding: 0.5em;
+}
+
+.flip-box-front {
+  font-size: 0.6em;
+}
+
+.flip-box-back {
+  font-size: 0.6em;
+}
+
+
+
+
+
+/* car section  */
+
+
+.nav-space{
+  height: 2vh;
+}
+
+
+.grid-container-cars{
+    grid-template-columns: auto;
+    padding: 25px;
+    grid-gap: 50px;
+    width: 100%;
+}
+
+
+.grid-item2{
+  padding: 10px;
+  font-size: 10px;
+  text-align: center;
+  height: 30em;
+    width: 100%;
+  border-radius: 5px;
+  border-top-left-radius: 30px; 
+
+}
+
+#grid-details{
+  font-size: 1em;
+}
+
+#grid-details-more{
+  font-size: 0.7em;
+}
+
+#grid-status{
+font-size: 0.8em;
+}
+
+#grid-description{
+  font-size: 0.5em;
+}
+
+#grid-price{
+  margin-top: 8%;
+  border-top: 2px solid rgb(24, 42, 59);
+  font-size: 0.9em;
+}
+
+
+
+
+
+
+
+
+
+/* footer section  */
+
+
+#footer {
+  border-top: 2px solid white;
+  height: 20vh;
+  font-size: 0.25em;
+  background-color: black;
+  position: relative;
+  z-index: -1;
+}
+
+.address h3{
+  left: -20%;
+  justify-content: center;
+  text-align: left;
+  position: absolute;
+  padding: 25px;
+  bottom: 9em;
+}
+
+.address{
+  left: 25%;
+  display: flex;
+  top: 5px;
+  justify-content: center;
+  text-align: left;
+  position: absolute;
+  padding: 3px 5px;
+  /* height: 25vh; */
+  color: white;
+}
+
+.opening-hours{
+  display: flex;
+  top: 5px;
+  justify-content: center;
+  text-align: left;
+  left: 1%;
+  position: absolute;
+  padding: 3px 5px;
+  color: white;
+}
+
+.opening-hours h3{
+  left: -25%;
+  justify-content: center;
+  text-align: left;
+  position: absolute;
+  padding: 25px;
+  bottom: 9em;
+}
+
+.footer-menu{
+  display: flex;
+  top: 5px;
+  justify-content: center;
+  text-align: left;
+  left: 55%;
+  position: absolute;
+  padding: 3px 5px;
+  color: white;
+}
+
+.footer-menu h3{
+  left: -42%;
+  justify-content: center;
+  text-align: left;
+  position: absolute;
+  padding: 25px;
+  bottom: 9em;
+}
+
+.footer-contact{
+  display: flex;
+  top: 5px;
+  justify-content: center;
+  text-align: left;
+  left: 75%;
+  position: absolute;
+  padding: 3px 5px;
+  color: white;
+}
+
+.footer-contact h3{
+  left: -29%;
+  justify-content: center;
+  text-align: left;
+  position: absolute;
+  padding: 33px;
+  bottom: 9em;
+}
+
+.fa-facebook-f{
+  left: -27%;
+  justify-content: center;
+  text-align: left;
+  position: absolute;
+  padding: 30px;
+  bottom: 9em;
+  color: rgb(38, 62, 197);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+}
+
+/* tablet use  */
+/* @media only screen and (min-width: 768px) and (max-width: 1026px){} */
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 800px) {
   /* header {
