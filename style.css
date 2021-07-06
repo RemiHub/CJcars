@@ -149,7 +149,7 @@ option {
   color: black;
   text-decoration: none;
   padding: 5px 180px;
-  font-size: 3em;
+  font-size: 2.8em;
   font-weight: bolder;
 }
 
@@ -597,6 +597,7 @@ option {
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5) translate(20%); 
   /* margin-left: 150px; */
+  z-index: 2;
   
 }
 
@@ -605,6 +606,7 @@ option {
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5); 
   /* margin: 200px; */
+  z-index: 2;
 }
 
 .zoom-right:hover{
@@ -612,6 +614,7 @@ option {
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5) translate(-20%); 
   /* margin-right: 200px; */
+  z-index: 2;
 }
 
 .grid-details-container{
@@ -644,10 +647,21 @@ font-size: 0.8em;
 
 /* contact page  */
 
+
+
 #map-section{
+  margin-bottom: 5%;
   padding: 40px;
   border-radius: 15px;
   text-align: center;
+}
+
+
+.final-info{
+  margin-top: 3%;
+  font-size: 2.5em;
+  text-align: center;
+  padding: 50px;
 }
 
 
@@ -695,7 +709,7 @@ font-size: 0.8em;
   font-size: 1.2em;
   background-color: black;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .address h3{
@@ -728,6 +742,7 @@ font-size: 0.8em;
   position: absolute;
   padding: 20px 30px;
   color: white;
+  
 }
 
 .opening-hours h3{
@@ -740,8 +755,10 @@ font-size: 0.8em;
 }
 
 .footer-menu{
-  display: flex;
+  width: 200px;
+  /* display: flex; */
   top: 20px;
+  display: block;
   justify-content: center;
   text-align: left;
   left: 50%;
@@ -751,13 +768,36 @@ font-size: 0.8em;
 }
 
 .footer-menu h3{
-  left: 10%;
+  left: 15%;
   justify-content: center;
   text-align: left;
   position: absolute;
   padding: 10px;
   bottom: 9em;
 }
+
+.footer-menu a{
+  font-size: 1.2em;
+  cursor: pointer;
+  display: block; /* Make the links appear below each other */
+  padding: 10px; /* Add some padding */
+}
+/* 
+.footer-menu a:hover {
+  cursor: pointer;
+} */
+/* 
+.footer-links a{
+  margin: auto;
+  width: 50%;
+  position: absolute;
+  padding: 20px 30px;
+  font-size: 1.5em;
+  text-decoration: none;
+  cursor: pointer;
+
+  
+} */
 
 .footer-contact{
   display: flex;
@@ -823,11 +863,7 @@ font-size: 0.8em;
 /* media queries  */
 
 /* smallest screens  */
-/* @media only screen and (min-width: 250px) and (max-width: 364px){} */
-
-
-/* mobiles use  */
-@media only screen and (min-width: 365px) and (max-width: 767px){
+@media only screen and (min-width: 250px) and (max-width: 321px){
 
   .main-nav li {
     display: inline-block;
@@ -839,13 +875,14 @@ font-size: 0.8em;
   
   .main-nav li a {
     padding: 4px 4px;
-    font-size: 1em;
+    font-size: 0.6em;
   }
   
 
   .first h1 {
+    padding: 20px;
     margin-top: 25%;
-    font-size: 1.8em;
+    font-size: 0.9em;
   }
 
 
@@ -853,12 +890,12 @@ font-size: 0.8em;
     margin-top: 55%;
     margin-bottom: 25%;
     width: 75%;
-    height: 28%;
+    height: 40%;
     text-align: left;
     justify-content: center;
     border-radius: 5px;
     position: relative;
-    padding: 5px 1px 0 auto;    
+    padding: 5px 1px auto auto;    
   }
   
   .search-bar {
@@ -868,7 +905,7 @@ font-size: 0.8em;
   
   .search-bar-box {
     margin: auto;
-    padding: 3px 58% 3px 5px;
+    padding: 3px 30% 3px 5px;
     font-size: 0.8em;
   }
   
@@ -927,7 +964,7 @@ font-size: 0.8em;
   flex-wrap: wrap;
   padding: 0 4px;
   width: 100%;
-  height: 80vh;
+  height: 105vh;
 }
 
 
@@ -936,7 +973,7 @@ font-size: 0.8em;
   -ms-flex: 50%; /* IE10 */
   flex: 100%;
   max-width: 100%;
-  padding: 0 10px;
+  /* padding: 0 10px; */
   margin-bottom: 15px;
   
 }
@@ -946,7 +983,7 @@ font-size: 0.8em;
   padding: 10px;
   vertical-align: middle;
   width: 100%;
-  height: 32vh;
+  height: 45vh;
   border-radius: 10px;
   /* border: 1px solid rgb(24, 42, 59); */
   position: relative;
@@ -976,7 +1013,7 @@ font-size: 0.8em;
 }
 
 #price {
-  margin-top: 6%;
+  margin-top: 8%;
   border-top: 0.5px solid rgb(24, 42, 59);
   font-size: 1em;
 }
@@ -984,6 +1021,7 @@ font-size: 0.8em;
 #description {
   font-size: 0.5em;
 }
+
 
 /* slideshow  */
 
@@ -1093,11 +1131,455 @@ font-size: 0.8em;
 .banner {
   font-size: 5px;
 }
-/* 
-#car-lot {
-  background-color: white;
-} */
 
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: 2em;
+  perspective: 1000px;
+  padding: 0.5em;
+}
+
+.flip-box-front {
+  font-size: 0.4em;
+}
+
+.flip-box-back {
+  font-size: 0.4em;
+}
+
+
+
+
+
+/* car section  */
+
+
+.nav-space{
+  height: 2vh;
+}
+
+
+.grid-container-cars{
+    grid-template-columns: auto;
+    padding: 25px;
+    grid-gap: 50px;
+    width: 100%;
+}
+
+
+.grid-item2{
+  padding: 10px;
+  font-size: 10px;
+  text-align: center;
+  height: 30em;
+    width: 100%;
+  border-radius: 5px;
+  border-top-left-radius: 30px; 
+}
+
+#grid-details{
+  font-size: 1.3em;
+}
+
+#grid-details-more{
+  font-size: 1em;
+}
+
+#grid-status{
+font-size: 0.9em;
+}
+
+#grid-description{
+  font-size: 0.6em;
+}
+
+#grid-price{
+  margin-top: 5%;
+  border-top: 2px solid rgb(24, 42, 59);
+  font-size: 1em;
+}
+
+
+
+/* contacts page/section  */
+
+
+
+
+#map-section iframe{
+  margin-top: 10%;
+  padding: 1px;
+  text-align: center;
+  width: 100%;
+  height: 40vh;
+}
+
+.final-info{
+  font-size: 1em;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+/* footer section  */
+
+
+#footer {
+  border-top: 2px solid white;
+  height: 20vh;
+  font-size: 5px;
+  z-index: 0;
+}
+
+.address h3{
+  left: -23%;
+  padding: 25px;
+  bottom: 4.5em;
+}
+
+.address{
+  /* font-size: 0.1em; */
+  left: 25%;
+  top: 5px;
+  padding: 3px 5px;
+}
+
+.opening-hours{
+  /* font-size: 5px; */
+  top: 5px;
+  left: 1%;
+  padding: 3px 5px;
+}
+
+.opening-hours h3{
+  left: -28%;
+  padding: 25px;
+  bottom: 4.2em;
+}
+
+.footer-menu{
+  top: 5px;
+  left: 55%;
+  padding: 3px 5px;
+}
+
+.footer-menu h3{
+  left: -10%;
+  padding: 30px;
+  bottom: 3.8em;
+}
+
+.footer-menu a{
+  font-size: 0.7em;
+  display: block; /* Make the links appear below each other */
+  padding: 3.5px; /* Add some padding */
+}
+
+.footer-contact{
+  display: flex;
+  top: 5px;
+  left: 75%;
+  padding: 3px 5px;
+}
+
+.footer-contact h3{
+  left: -35%;
+  padding: 33px;
+  bottom: 4.5em;
+}
+
+.fa-facebook-f{
+  left: -32%;
+  padding: 30px;
+  bottom: 4em;
+}
+
+}
+
+
+
+
+/* smallest screens  */
+@media only screen and (min-width: 322px) and (max-width: 364px){
+  .main-nav li {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 1px;
+  }
+  
+  .main-nav li a {
+    padding: 4px 4px;
+    font-size: 1em;
+    
+  }
+  
+
+  .first h1 {
+    padding: 20px;
+    margin-top: 25%;
+    font-size: 1.2em;
+  }
+
+
+  .search-box {
+    margin-top: 55%;
+    margin-bottom: 25%;
+    width: 75%;
+    height: 35%;
+    text-align: left;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+    padding: 5px 1px 0 auto;    
+  }
+  
+  .search-bar {
+    float: left;
+    padding: 5px;
+  }
+  
+  .search-bar-box {
+    margin: auto;
+    padding: 3px 50% 3px 5px;
+    font-size: 0.8em;
+  }
+  
+  .search-box button {
+    /* margin: auto auto; */
+    padding: 5px 5px;          /*top right bottom left*/
+    /* margin-top: 1px; */
+    /* margin-right: 5px; */
+    margin: 10px 5px 0 auto;
+    font-size: 0.8em;
+    cursor: pointer;
+  }
+  
+  .car-make {
+    vertical-align: top;
+    /* display:inline-block;  */
+    padding: 5px 8px;
+    font-size: 0.9em;
+    float: left;
+  }
+  
+  #cars {
+    font-size: 0.9em;
+    padding: 5px;
+  }
+  
+  /* need to sort options in ascending alphabetical order */
+  option {
+    font-size: 0.8em;
+  }
+  
+  .car-model {
+    vertical-align: top;
+    display: inline-block;
+    padding: 5px;
+  }
+  
+  .min {
+    vertical-align: top;
+    display: inline-block;
+    padding: 5px;
+  }
+  
+  .max {
+    vertical-align: top;
+    display: inline-block;
+    padding: 5px;
+  }
+
+
+  
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  width: 100%;
+  height: 95vh;
+}
+
+
+
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 10px;
+  margin-bottom: 15px;
+  
+}
+
+.column-text-container {
+  margin-top: 1px;
+  padding: 10px;
+  vertical-align: middle;
+  width: 100%;
+  height: 42vh;
+  border-radius: 10px;
+  /* border: 1px solid rgb(24, 42, 59); */
+  position: relative;
+  
+}
+
+.column img {
+  margin-top: 40px;
+  vertical-align: middle;
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  position: relative;
+}
+
+#details {
+  font-size: 1.3em;
+}
+
+#details-more {
+  font-size: 0.8em;
+}
+
+#status {
+  font-size: 0.8em;
+  margin-top: 3%;
+}
+
+#price {
+  margin-top: 8%;
+  border-top: 0.5px solid rgb(24, 42, 59);
+  font-size: 1em;
+}
+
+#description {
+  font-size: 0.5em;
+}
+
+
+/* slideshow  */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000vw;
+  /* max-height: 50vh; */
+  position: relative;
+  margin: auto;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 8px;
+  padding: 2px 12px;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 6px;
+  width: 6px;
+  margin: 0 4px;
+  padding: 0 3px;
+}
+
+.under-row-section{
+  height: 12vh;
+}
+
+
+
+
+
+/* service page/section  */
+
+
+
+#services {
+  height: 60vh;
+  
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed 
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  } */
+
+#p1 {
+  font-size: 0.8em;
+  width: 33%;
+  height: 60vh;
+  padding: 1em;
+}
+
+
+#p2 {
+  font-size: 0.8em;
+  width: 33%;
+  height: 60vh;
+  float: left;
+  padding: 1em;
+}
+
+#p3 {
+  font-size: 0.8em;
+  width: 33%;
+  height: 60vh;
+  padding: 1em;
+}
+
+
+/* flip info design  */
+
+#info {
+  background: black;
+  padding: 10px;
+  border: 1px solid black;
+  color: white;
+}
+
+.banner {
+  font-size: 5px;
+}
 
 /* Fading animation */
 
@@ -1148,39 +1630,54 @@ font-size: 0.8em;
   padding: 10px;
   font-size: 10px;
   text-align: center;
-  height: 30em;
+  height: 35em;
     width: 100%;
   border-radius: 5px;
   border-top-left-radius: 30px; 
-
 }
 
 #grid-details{
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 #grid-details-more{
-  font-size: 0.7em;
+  font-size: 1.2em;
 }
 
 #grid-status{
-font-size: 0.8em;
+font-size: 1.1em;
 }
 
 #grid-description{
-  font-size: 0.5em;
+  font-size: 0.8em;
 }
 
 #grid-price{
-  margin-top: 8%;
+  margin-top: 5%;
   border-top: 2px solid rgb(24, 42, 59);
-  font-size: 0.9em;
+  font-size: 1.2em;
 }
 
 
 
+/* contacts page/section  */
 
 
+
+
+#map-section iframe{
+  margin-top: 10%;
+  padding: 1px;
+  text-align: center;
+  width: 100%;
+  height: 40vh;
+}
+
+.final-info{
+  font-size: 1em;
+  text-align: center;
+  padding: 20px;
+}
 
 
 
@@ -1192,114 +1689,963 @@ font-size: 0.8em;
   border-top: 2px solid white;
   height: 20vh;
   font-size: 0.25em;
-  background-color: black;
-  position: relative;
   z-index: -1;
 }
 
 .address h3{
   left: -20%;
-  justify-content: center;
-  text-align: left;
-  position: absolute;
   padding: 25px;
   bottom: 9em;
 }
 
 .address{
   left: 25%;
-  display: flex;
   top: 5px;
-  justify-content: center;
-  text-align: left;
-  position: absolute;
   padding: 3px 5px;
-  /* height: 25vh; */
-  color: white;
 }
 
 .opening-hours{
-  display: flex;
   top: 5px;
-  justify-content: center;
-  text-align: left;
   left: 1%;
-  position: absolute;
   padding: 3px 5px;
-  color: white;
 }
 
 .opening-hours h3{
   left: -25%;
-  justify-content: center;
-  text-align: left;
-  position: absolute;
   padding: 25px;
   bottom: 9em;
 }
 
 .footer-menu{
-  display: flex;
   top: 5px;
-  justify-content: center;
-  text-align: left;
   left: 55%;
-  position: absolute;
   padding: 3px 5px;
-  color: white;
 }
 
 .footer-menu h3{
-  left: -42%;
-  justify-content: center;
-  text-align: left;
-  position: absolute;
-  padding: 25px;
-  bottom: 9em;
+  left: -10%;
+  padding: 30px;
+  bottom: 8.7em;
+}
+
+.footer-menu a{
+  font-size: 0.7em;
+  display: block; /* Make the links appear below each other */
+  padding: 4.5px; /* Add some padding */
 }
 
 .footer-contact{
   display: flex;
   top: 5px;
-  justify-content: center;
-  text-align: left;
   left: 75%;
-  position: absolute;
   padding: 3px 5px;
-  color: white;
 }
 
 .footer-contact h3{
   left: -29%;
-  justify-content: center;
-  text-align: left;
-  position: absolute;
   padding: 33px;
   bottom: 9em;
 }
 
 .fa-facebook-f{
   left: -27%;
-  justify-content: center;
-  text-align: left;
-  position: absolute;
   padding: 30px;
   bottom: 9em;
-  color: rgb(38, 62, 197);
+}
+
+}
+
+
+
+
+
+
+/* medium mobiles use  */
+@media only screen and (min-width: 365px) and (max-width: 767px){
+
+  .main-nav li {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 1px;
+  }
+  
+  .main-nav li a {
+    padding: 4px 4px;
+    font-size: 1em;
+    
+  }
+  
+
+  .first h1 {
+    padding: 20px;
+    margin-top: 25%;
+    font-size: 1.2em;
+  }
+
+
+  .search-box {
+    margin-top: 55%;
+    margin-bottom: 25%;
+    width: 75%;
+    height: 32%;
+    text-align: left;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+    padding: 5px 1px auto auto;    
+  }
+  
+  .search-bar {
+    float: left;
+    padding: 5px;
+  }
+  
+  .search-bar-box {
+    margin: auto;
+    padding: 3px 58% 3px 5px;
+    font-size: 0.8em;
+  }
+  
+  .search-box button {
+    /* margin: auto auto; */
+    padding: 5px 5px;          /*top right bottom left*/
+    /* margin-top: 1px; */
+    /* margin-right: 5px; */
+    margin: 10px 5px 0 auto;
+    font-size: 0.8em;
+    cursor: pointer;
+  }
+  
+  .car-make {
+    vertical-align: top;
+    /* display:inline-block;  */
+    padding: 5px 8px;
+    font-size: 0.9em;
+    float: left;
+  }
+  
+  #cars {
+    font-size: 0.9em;
+    padding: 5px;
+  }
+  
+  /* need to sort options in ascending alphabetical order */
+  option {
+    font-size: 0.8em;
+  }
+  
+  .car-model {
+    vertical-align: top;
+    display: inline-block;
+    padding: 5px;
+  }
+  
+  .min {
+    vertical-align: top;
+    display: inline-block;
+    padding: 5px;
+  }
+  
+  .max {
+    vertical-align: top;
+    display: inline-block;
+    padding: 5px;
+  }
+
+
+  
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  width: 100%;
+  height: 95vh;
+}
+
+
+
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 10px;
+  margin-bottom: 15px;
+  
+}
+
+.column-text-container {
+  margin-top: 1px;
+  padding: 10px;
+  vertical-align: middle;
+  width: 100%;
+  height: 42vh;
+  border-radius: 10px;
+  /* border: 1px solid rgb(24, 42, 59); */
+  position: relative;
+  
+}
+
+.column img {
+  margin-top: 40px;
+  vertical-align: middle;
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  position: relative;
+}
+
+#details {
+  font-size: 1.3em;
+}
+
+#details-more {
+  font-size: 0.8em;
+}
+
+#status {
+  font-size: 0.8em;
+  margin-top: 3%;
+}
+
+#price {
+  margin-top: 8%;
+  border-top: 0.5px solid rgb(24, 42, 59);
+  font-size: 1em;
+}
+
+#description {
+  font-size: 0.5em;
+}
+
+
+/* slideshow  */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000vw;
+  /* max-height: 50vh; */
+  position: relative;
+  margin: auto;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 8px;
+  padding: 2px 12px;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 6px;
+  width: 6px;
+  margin: 0 4px;
+  padding: 0 3px;
+}
+
+.under-row-section{
+  height: 12vh;
 }
 
 
 
 
 
+/* service page/section  */
 
 
+
+#services {
+  height: 60vh;
+  
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed 
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  } */
+
+#p1 {
+  font-size: 0.8em;
+  width: 33%;
+  height: 60vh;
+  padding: 1em;
+}
+
+
+#p2 {
+  font-size: 0.8em;
+  width: 33%;
+  height: 60vh;
+  float: left;
+  padding: 1em;
+}
+
+#p3 {
+  font-size: 0.8em;
+  width: 33%;
+  height: 60vh;
+  padding: 1em;
+}
+
+
+/* flip info design  */
+
+#info {
+  background: black;
+  padding: 10px;
+  border: 1px solid black;
+  color: white;
+}
+
+.banner {
+  font-size: 5px;
+}
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: 2em;
+  perspective: 1000px;
+  padding: 0.5em;
+}
+
+.flip-box-front {
+  font-size: 0.6em;
+}
+
+.flip-box-back {
+  font-size: 0.6em;
+}
+
+
+
+
+
+/* car section  */
+
+
+.nav-space{
+  height: 2vh;
+}
+
+
+.grid-container-cars{
+    grid-template-columns: auto;
+    padding: 25px;
+    grid-gap: 50px;
+    width: 100%;
+}
+
+
+.grid-item2{
+  padding: 10px;
+  font-size: 10px;
+  text-align: center;
+  height: 50em;
+    width: 100%;
+  border-radius: 5px;
+  border-top-left-radius: 30px; 
+}
+
+#grid-details{
+  font-size: 3em;
+}
+
+#grid-details-more{
+  font-size: 1.8em;
+}
+
+#grid-status{
+font-size: 1.6em;
+}
+
+#grid-description{
+  font-size: 1em;
+}
+
+#grid-price{
+  margin-top: 5%;
+  border-top: 2px solid rgb(24, 42, 59);
+  font-size: 1.8em;
+}
+
+
+
+/* contacts page/section  */
+
+
+
+
+#map-section iframe{
+  margin-top: 10%;
+  padding: 1px;
+  text-align: center;
+  width: 100%;
+  height: 40vh;
+}
+
+.final-info{
+  font-size: 1em;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+/* footer section  */
+
+
+#footer {
+  border-top: 2px solid white;
+  height: 20vh;
+  font-size: 0.25em;
+  z-index: -1;
+}
+
+.address h3{
+  left: -20%;
+  padding: 25px;
+  bottom: 9em;
+}
+
+.address{
+  left: 25%;
+  top: 5px;
+  padding: 3px 5px;
+}
+
+.opening-hours{
+  top: 5px;
+  left: 1%;
+  padding: 3px 5px;
+}
+
+.opening-hours h3{
+  left: -25%;
+  padding: 25px;
+  bottom: 9em;
+}
+
+.footer-menu{
+  top: 5px;
+  left: 55%;
+  padding: 3px 5px;
+}
+
+.footer-menu h3{
+  left: -10%;
+  padding: 30px;
+  bottom: 8.7em;
+}
+
+.footer-menu a{
+  font-size: 0.7em;
+  display: block; /* Make the links appear below each other */
+  padding: 4.5px; /* Add some padding */
+}
+
+.footer-contact{
+  display: flex;
+  top: 5px;
+  left: 75%;
+  padding: 3px 5px;
+}
+
+.footer-contact h3{
+  left: -22%;
+  padding: 30px;
+  bottom: 9em;
+}
+
+.fa-facebook-f{
+  left: -25%;
+  padding: 30px;
+  bottom: 8em;
+}
 
 }
+
+
+
+
+
 
 /* tablet use  */
-/* @media only screen and (min-width: 768px) and (max-width: 1026px){} */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+  
+  .main-nav li {
+    padding: 5px 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 1px;
+  }
+  
+  .main-nav li a {
+    padding: 4px 4px;
+    font-size: 1.6em;
+  }
+  
+
+  .first h1 {
+    margin-top: 25%;
+    font-size: 1.8em;
+  }
+
+
+  .search-box {
+    margin-top: 55%;
+    margin-bottom: 25%;
+    width: 50%;
+    height: 18%;
+    text-align: left;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+    padding: 5px 1px 0 auto;    
+  }
+  
+  .search-bar {
+    float: left;
+    padding: 15px;
+  }
+  
+  .search-bar-box {
+    margin: auto;
+    padding: 3px 100% 3px 5px;
+    font-size: 0.8em;
+  }
+  
+  .search-box button {
+    padding: 5px 5px;          /*top right bottom left*/
+    margin: 10px 5px 0 0;
+    font-size: 1em;
+  }
+  
+  .car-make {
+    vertical-align: top;
+    padding: 5px 10px 0 10px;
+    font-size: 1em;
+    float: left;
+  }
+  
+  #cars {
+    font-size: 1em;
+    padding: 2px;
+  }
+  
+  /* need to sort options in ascending alphabetical order */
+  option {
+    font-size: 0.8em;
+  }
+  
+  .car-model {
+    vertical-align: top;
+    display: inline-block;
+    padding: 5px;
+  }
+  
+  .min {
+    vertical-align: top;
+    display: inline-block;
+    padding: 5px;
+  }
+  
+  .max {
+    vertical-align: top;
+    display: inline-block;
+    padding: 5px;
+  }
+
+
+  
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 5px;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 40px;
+  margin-bottom: 15px;
+}
+
+.column-text-container {
+  margin-top: 1px;
+  padding: 15px;
+  vertical-align: middle;
+  width: 100%;
+  height: 40vh;
+  border-radius: 10px;
+  /* border: 1px solid rgb(24, 42, 59); */
+  position: relative;
+  
+}
+
+.column img {
+  margin-top: 40px;
+  vertical-align: middle;
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  position: relative;
+}
+
+#details {
+  font-size: 2em;
+}
+
+#details-more {
+  font-size: 1.2em;
+}
+
+#status {
+  font-size: 1.2em;
+  margin-top: 3%;
+}
+
+#price {
+  margin-top: 10%;
+  border-top: 0.5px solid rgb(24, 42, 59);
+  font-size: 1.2em;
+}
+
+#description {
+  font-size: 0.9em;
+}
+
+
+/* slideshow  */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 2px 12px;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 6px;
+  width: 6px;
+  margin: 0 4px;
+  padding: 0 3px;
+}
+
+.under-row-section{
+  height: 10vh;
+}
+
+
+
+
+
+/* service page/section  */
+
+
+
+#services {
+  height: 60vh;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed 
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  } */
+
+#p1 {
+  font-size: 1em;
+  width: 33%;
+  height: 60vh;
+  padding: 1em;
+  color: white;
+}
+
+
+#p2 {
+  font-size: 1em;
+  width: 33%;
+  height: 60vh;
+  float: left;
+  padding: 1em;
+  color: white;
+}
+
+#p3 {
+  font-size: 1em;
+  width: 33%;
+  height: 60vh;
+  padding: 1em;
+  color: white;
+}
+
+
+/* flip info design  */
+
+#info {
+  background: black;
+  padding: 10px;
+  border: 1px solid black;
+  color: white;
+}
+
+.banner {
+  font-size: 5px;
+}
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: 2.2em;
+  perspective: 1000px;
+  padding: 0.5em;
+}
+
+.flip-box-front {
+  font-size: 0.8em;
+}
+
+.flip-box-back {
+  font-size: 0.8em;
+}
+
+
+
+
+
+/* car section  */
+
+
+.nav-space{
+  height: 2vh;
+}
+
+
+.grid-container-cars{
+    grid-template-columns: auto;
+    padding: 25px;
+    grid-gap: 50px;
+    width: 100%;
+}
+
+
+.grid-item2{
+  padding: 10px;
+  font-size: 10px;
+  text-align: center;
+  height: 60em;
+  width: 100%;
+  border-radius: 5px;
+  border-top-left-radius: 30px; 
+}
+
+#grid-details{
+  font-size: 3.8em;
+}
+
+#grid-details-more{
+  font-size: 2.3em;
+}
+
+#grid-status{
+font-size: 2.2em;
+}
+
+#grid-description{
+  font-size: 1.2em;
+}
+
+#grid-price{
+  margin-top: 4%;
+  border-top: 2px solid rgb(24, 42, 59);
+  font-size: 2em;
+}
+
+
+
+/* contacts page/section  */
+/* 
+#map-section{
+  bottom: 20%;
+} */
+
+
+#map-section iframe{
+  margin-top: 10%;
+  /* bottom: 40%; */
+  padding: 1px;
+  text-align: center;
+  width: 100%;
+  height: 40vh;
+}
+
+.final-info{
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+/* footer section  */
+
+
+#footer {
+  
+  border-top: 2px solid white;
+  height: 20vh;
+  font-size: 0.6em;
+  z-index: 0;
+}
+
+.address h3{
+  left: 0%;
+  padding: 5px;
+  bottom: 8em;
+}
+
+.address{
+  left: 25%;
+  top: 5px;
+  padding: 3px 5px;
+}
+
+.opening-hours{
+  top: 5px;
+  left: 1%;
+  padding: 3px 5px;
+}
+
+.opening-hours h3{
+  left: 0%;
+  padding: 5px;
+  bottom: 8em;
+}
+
+.footer-menu{
+  top: 20px;
+  left: 55%;
+  padding: 3px 5px;
+}
+
+.footer-menu h3{
+  left: 3%;
+  padding: 5px;
+  bottom: 7.5em;
+}
+
+.footer-menu a{
+  font-size: 0.8em;
+  display: block; /* Make the links appear below each other */
+  padding: 4.5px; /* Add some padding */
+}
+
+.footer-contact{
+  display: flex;
+  top: 5px;
+  left: 75%;
+  padding: 3px 5px;
+}
+
+.footer-contact h3{
+  left: -1%;
+  padding: 5px;
+  bottom: 8em;
+}
+
+.fa-facebook-f{
+  left: -1%;
+  padding: 5px;
+  bottom: 8em;
+}
 
 
 
@@ -1308,17 +2654,477 @@ font-size: 0.8em;
 
 
 
+}
+
+
+
+
+
+/* tablet use  */
+@media only screen and (min-width: 1023px) and (max-width: 2400px){
+
+  
+  .main-nav li {
+    padding: 5px 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 1px;
+  }
+  
+  .main-nav li a {
+    padding: 4px 4px;
+    font-size: 2.4em;
+    /* color: red; */
+  }
+  
+
+  .first h1 {
+    margin-top: 25%;
+    font-size: 2em;
+  }
+
+
+  .search-box {
+    margin-top: 50%;
+    margin-bottom: 35%;
+    width: 75%;
+    height: 10%;
+    text-align: left;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+    padding: 10px 5px 0 auto;    
+  }
+  
+  .search-bar {
+    float: left;
+    padding: 15px;
+  }
+  
+  .search-bar-box {
+    margin: auto;
+    padding: 5px 10% 5px 5px;
+    font-size: 1em;
+  }
+  
+  .search-box button {
+    padding: 10px 10px;          /*top right bottom left*/
+    margin: 10px 10px 10px 10px;
+    font-size: 1em;
+  }
+  
+  .car-make {
+    vertical-align: top;
+    padding: 15px 0 0 25px;
+    font-size: 1em;
+    float: left;
+  }
+  
+  #cars {
+    font-size: 1em;
+    padding: 4px;
+  }
+  
+  /* need to sort options in ascending alphabetical order */
+  option {
+    font-size: 0.8em;
+  }
+  
+  .car-model {
+    vertical-align: top;
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .min {
+    vertical-align: top;
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .max {
+    vertical-align: top;
+    display: inline-block;
+    padding: 10px;
+  }
+
+
+  
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 5px;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 40px;
+  margin-bottom: 15px;
+}
+
+.column-text-container {
+  margin-top: 1px;
+  padding: 15px;
+  vertical-align: middle;
+  width: 100%;
+  height: 40vh;
+  border-radius: 10px;
+  /* border: 1px solid rgb(24, 42, 59); */
+  position: relative;
+  
+}
+
+.column img {
+  margin-top: 40px;
+  vertical-align: middle;
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  position: relative;
+}
+
+#details {
+  font-size: 3em;
+}
+
+#details-more {
+  font-size: 2em;
+}
+
+#status {
+  font-size: 2em;
+  margin-top: 3%;
+}
+
+#price {
+  margin-top: 8%;
+  border-top: 0.5px solid rgb(24, 42, 59);
+  font-size: 2em;
+}
+
+#description {
+  font-size: 1.1em;
+}
+
+
+/* slideshow  */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 2px 12px;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 6px;
+  width: 6px;
+  margin: 0 4px;
+  padding: 0 3px;
+}
+
+.under-row-section{
+  height: 12vh;
+}
+
+
+
+
+
+/* service page/section  */
+
+
+#services {
+  height: 60vh;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed 
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  } */
+
+#p1 {
+  font-size: 1.5em;
+  width: 33%;
+  height: 60vh;
+  padding: 1em;
+  color: white;
+}
+
+
+#p2 {
+  font-size: 1.5em;
+  width: 33%;
+  height: 60vh;
+  float: left;
+  padding: 1em;
+  color: white;
+}
+
+#p3 {
+  font-size: 1.5em;
+  width: 33%;
+  height: 60vh;
+  padding: 1em;
+  color: white;
+}
+
+
+/* flip info design  */
+
+#info {
+  background: black;
+  padding: 10px;
+  border: 1px solid black;
+  color: white;
+}
+
+.banner {
+  font-size: 5px;
+}
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: 4em;
+  perspective: 1000px;
+  padding: 1em;
+}
+
+.flip-box-front {
+  font-size: 1em;
+}
+
+.flip-box-back {
+  font-size: 1em;
+}
+
+
+
+
+
+/* car section  */
+
+
+.nav-space{
+  height: 2vh;
+}
+
+
+.grid-container-cars{
+    grid-template-columns: auto;
+    padding: 25px;
+    grid-gap: 50px;
+    width: 100%;
+}
+
+
+.grid-item2{
+  padding: 10px;
+  font-size: 10px;
+  text-align: center;
+  height: 80em;
+    width: 100%;
+  border-radius: 5px;
+  border-top-left-radius: 30px; 
+}
+
+#grid-details{
+  font-size: 4em;
+}
+
+#grid-details-more{
+  font-size: 2.8em;
+}
+
+#grid-status{
+font-size: 2.8em;
+}
+
+#grid-description{
+  font-size: 2em;
+}
+
+#grid-price{
+  margin-top: 6%;
+  border-top: 2px solid rgb(24, 42, 59);
+  font-size: 3em;
+}
+
+
+
+/* contacts page/section  */
+/* 
+#map-section{
+  bottom: 20%;
+} */
+
+
+#map-section iframe{
+  margin-top: 10%;
+  /* bottom: 40%; */
+  padding: 1px;
+  text-align: center;
+  width: 100%;
+  height: 40vh;
+}
+
+.final-info{
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+/* footer section  */
+
+
+#footer {
+  
+  border-top: 2px solid white;
+  height: 20vh;
+  font-size: 0.8em;
+  z-index: 0;
+}
+
+.address h3{
+  left: 0%;
+  padding: 5px;
+  bottom: 8em;
+}
+
+.address{
+  left: 25%;
+  top: 5px;
+  padding: 3px 5px;
+}
+
+.opening-hours{
+  top: 5px;
+  left: 1%;
+  padding: 3px 5px;
+}
+
+.opening-hours h3{
+  left: 0%;
+  padding: 5px;
+  bottom: 8em;
+}
+
+.footer-menu{
+  top: 35px;
+  left: 55%;
+  padding: 3px 5px;
+}
+
+.footer-menu h3{
+  left: 3%;
+  padding: 5px;
+  bottom: 7.5em;
+}
+
+.footer-menu a{
+  font-size: 0.8em;
+  display: block; /* Make the links appear below each other */
+  padding: 4.5px; /* Add some padding */
+}
+
+.footer-contact{
+  display: flex;
+  top: 5px;
+  left: 75%;
+  padding: 3px 5px;
+}
+
+.footer-contact h3{
+  left: -1%;
+  padding: 5px;
+  bottom: 8em;
+}
+
+.fa-facebook-f{
+  left: -1%;
+  padding: 5px;
+  bottom: 8em;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+/* 
 
 @media screen and (max-width: 800px) {
   /* header {
       
       background-image: url(cnj-logo.jpg);
-    } */
+    } 
   #p1,
   #p2,
   #p3 {
-    /* flex: 50%; */
-    /* max-width: 100%; */
+    /* flex: 50%; 
+    /* max-width: 100%; 
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -1328,4 +3134,4 @@ font-size: 0.8em;
     flex: 100%;
     max-width: 100%;
   }
-}
+} */
