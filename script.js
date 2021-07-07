@@ -1,10 +1,5 @@
-// const header = document.getElementById('header')
-// scroll = window.pageYOffset;
-//     document.addEventListener('scroll', function (e) {
-//         let offset = window.pageYOffset;
-//         scroll = offset;
-//         header.style.top = (100 + scroll) + '%';
-//     });
+
+
 $(document).ready(function(){
     $(window).scroll(function(){
         $('.firsty').css('opacity', 1 - 
@@ -47,7 +42,7 @@ function addSlide(){
              var newDotSpan = document.createElement("span");
 
             //grab the container where the orignal dots are in html
-              var getDots = document.getElementById("dot-container"); // .getElementsByTagName("span")[3]
+              var getDots = document.getElementById("dot-container");
 
               //add or append the new span tag to the dot-container 
               getDots.appendChild(newDotSpan);
@@ -56,33 +51,10 @@ function addSlide(){
               newDotSpan.className += 'dot';
 
               var totalExtra = slides.length - dots.length;
-              // console.log("total extra slides are now: " + totalExtra);
 
             exit++; 
   } 
 }
-
-
-
-
-// function addDotToSlide(){
-//   var slides = document.getElementsByClassName("mySlides");
-//   var dots = document.getElementsByClassName("dot");
-//   var content = document.createElement("div");
-
-//   content.appendChild = `
-//   <div style="text-align:center">
-//   <span class="dot" onclick="currentSlide(1)"></span>
-//   </div>`;
-
-
-
-
-// }
-
-// addDotToSlide();
-
-
 
 
 
@@ -130,49 +102,3 @@ function changeColor(){
 }
 
 changeColor();
-
-
-
-
-// function initMap() {
-//   // The location of Uluru
-//   const uluru = { lat: -25.344, lng: 131.036 };
-//   // The map, centered at Uluru
-//   const map = new google.maps.Map(document.getElementById("map"), {
-//     zoom: 3,
-//     center: uluru,
-//   });
-//   // The marker, positioned at Uluru
-//   const marker = new google.maps.Marker({
-//     position: uluru,
-//     map: map,
-//   });
-// }
-
-// function initMap(){
-//   const map = new google.maps.Map(document.getElementById("map-section"), {
-//     zoom: 8,
-//   });
-// };
-
-// initMap();
-
-
-
-
-                                   
-      
-
-  
-
-
-//   function changeImage() {
-//     var image = document.getElementById('cnj-logo.jpg');
-//     if (image.src.match("cars2")) {
-//       image.src = "cnj-logo.jpg";
-//     } else {
-//       image.src = "cars2.jpg";
-//     }
-//   }
-
-  

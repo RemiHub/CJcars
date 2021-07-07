@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CJ cars</title>
+    <link rel="icon" type="image/gif/png" href="/favicon.jpg" >
     <link  rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    
 </head>
 <body>
 
@@ -28,6 +30,64 @@
 
   <header id="header">
 
+  <form>
+
+    <div class="form-box-container">
+      <div class="form-box">
+        <input type="text" placeholder="Search cars..." name="search" class="search">
+      </div>
+      <div class="form-box">
+        <label for="car-make">CAR MAKE:</label>
+        <!-- <input type="text" id="car-makes"> -->
+        <select name="" id="car-makes">
+          <option value="VW">VW</option>
+          <option value="BMW">BMW</option>
+          <option value="MERCEDES">MERCEDES</option>
+          <option value="AUDI">AUDI</option>
+        </select>
+      </div>
+      <div class="form-box">
+        <label for="car-model">CAR MODEL:</label>
+        <!-- <input type="text" id="car-model"> -->
+        <select name="" id="car-model">
+          <option value="car-model-value">---</option>
+          
+        </select>
+      </div>
+      <div class="form-box">
+        <label for="max">MIN:</label>
+        <!-- <input type="text" id="max-value"> -->
+        <select name="" id="min-value">
+          <option value="one">£1000</option>
+          <option value="two">£2000</option>
+          <option value="five">£5000</option>
+          <option value="ten">£10000</option>
+        </select>
+      </div>
+      <div class="form-box">
+        <label for="min">MAX:</label>
+        <!-- <input type="text" id="min-value"> -->
+        <select name="" id="max-value">
+          <!-- <option value="one">£1000</option> -->
+          <option value="two">£2000</option>
+          <option value="five">£5000</option>
+          <option value="ten">£10000</option>
+        </select>
+        <button type="button" class="submit-again">FIND</button>
+      </div>
+      <!-- <button type="button" class="submit-again">FIND</button> -->
+      <button type="button"><i class="submit"></i></button>
+    </div>
+
+  </form>
+
+
+
+
+
+
+<!-- 
+
     <div class="search-box">
       <form action="/action_page.php" class="search-bar">
         <input type="text" placeholder="Search cars..." name="search" class="search-bar-box">
@@ -43,7 +103,7 @@
         </select>
       </form>
         
-      <!-- <div class="car-make">CAR MAKE</div> -->
+       <div class="car-make">CAR MAKE</div> //comment out
 
       <form action="/action_page.php" class="car-make">
         <label for="cars">CAR MODEL:</label>
@@ -55,7 +115,7 @@
         </select>
       </form>
 
-      <!-- <div class="car-model">CAR MODEL</div> -->
+       <div class="car-model">CAR MODEL</div> //comment out
       <form action="/action_page.php" class="car-make">
         <label for="cars">MIN:</label>
         <select name="min" id="cars">
@@ -65,9 +125,9 @@
           <option value="ten">£10000</option>
         </select>
       </form>
-      <!-- <div class="min">MIN</div> -->
+       <div class="min">MIN</div> 
 
-      <!-- <div class="max">MAX</div> -->
+       <div class="max">MAX</div> //comment out
       <form action="/action_page.php" class="car-make">
         <label for="cars">MAX:</label>
         <select name="max" id="cars">
@@ -77,25 +137,23 @@
           <option value="ten">£10000</option>
         </select>
       </form>
-
       <button type="submit"><i class="fa fa-search"></i></button>
-    </div>
+    </div> -->
 
-            
+
             <div class="first">
             <h1 class="firsty">WHERE WILL YOUR NEXT CAR TAKE YOU? <br> CALL US NOW TO FIND OUT ON <span>01992 712 333</span></h1>
             </div>
+  </header>
 
-    </header>
 
 
     <section>
-
       <div class="row"> 
         <div class="column">
 
           <!-- Slideshow container -->
-<div class="slideshow-container">
+  <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
@@ -116,71 +174,65 @@
     <div class="text">Caption Three</div>
   </div>
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+    <br>
 
 <!-- The dots/circles -->
-<div id="dot-container" style="text-align:center">
-  <!-- <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span> -->
-</div>
-          
-        </div>
+    <div id="dot-container" style="text-align:center">
+      <!-- <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span> -->
+    </div> 
+  </div>
+
+
         <div class="column">
           <div class="column-text-container">
           
-          <div id="details">VW Golf GTI 2015 2.0L <br> </div>
-          <div id="details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
-          <div id="status">SOLD</div>
-          <br>
-          <div id="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Enim, voluptates. Voluptatibus, velit iusto sed animi aliquam fugit dignissimos 
-            voluptate magni tempora corporis commodi, cumque aspernatur eveniet facere esse, 
-            placeat eaque est soluta architecto similique sit ex. Asperiores laboriosam deleniti 
-            nemo dolore tempore autem aperiam dolores libero sunt. Quo, pariatur totam.</div>
+            <div id="details">VW Golf GTI 2015 2.0L <br> </div>
+            <div id="details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
+            <div id="status">SOLD</div>
+            <br>
+            <div id="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              Enim, voluptates. Voluptatibus, velit iusto sed animi aliquam fugit dignissimos 
+              voluptate magni tempora corporis commodi, cumque aspernatur eveniet facere esse, 
+              placeat eaque est soluta architecto similique sit ex. Asperiores laboriosam deleniti 
+              nemo dolore tempore autem aperiam dolores libero sunt. Quo, pariatur totam.</div>
 
-          <div id="price">£16,000</div>
+            <div id="price">£16,000</div>
         </div>
-
-          <!-- <img src="saloon.jpg" style="width:100%"> -->
-        </div>  
-     
-
-        <!--
-        <div class="column">
-          <img src="hatchback.jpg" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="saloon.jpg" style="width:100%">
-        </div> -->
-      </div>
+      </div>  
+    </div>
 
       <div class="under-row-section"></div>
-      
-
-    </section>
+    
+  </section>
 
     
 
     <section id="services">
+        <div class="facebook-container">
+      <iframe 
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCjvehiclesales123%2F&tabs=timeline&width=500&height=800&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" 
+        width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" 
+        allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+      </iframe>
+        </div>
+
+        
 
         <div class="services1">
-          
-        <p id="p1"> WE OFFER DISCOUNTS ON REPAIRS AND SERVICING IF YOU BOUGHT YOU'RE VEHICLE WITH US, ENQUIRE WITHIN FOR MORE INFO<br>
-          <br>
-          <br>
-          KEEP UP TO DATE WITH NEW STOCK ON OUR FACEBOOK PAGE  
-          
-           </p>
-           
-
-        <p id="p2"></p>
-        <p id="p3"></p>
-      </div>
+          <p id="p1"> WE OFFER DISCOUNTS ON REPAIRS AND SERVICING IF YOU BOUGHT YOU'RE VEHICLE WITH US, ENQUIRE WITHIN FOR MORE INFO<br>
+            <br>
+            <br>
+            KEEP UP TO DATE WITH NEW STOCK ON OUR FACEBOOK PAGE 
+          </p>
+            <p id="p2"></p>
+            <p id="p3"></p>
+        </div>
     </section>
 
     
@@ -190,17 +242,14 @@
         <div class="flip-box-inner">
           <div class="flip-box-front">
             <h2>CALL US ON 01992 712 333</h2>
-          </div>
-          <div class="flip-box-back">
+            </div>
+            <div class="flip-box-back">
             <h2>OR EMAIL US ON C-J-CARSALES@OUTLOOK.COM</h2>
           </div>
         </div>
       </div>
     </section>
 
-
-        
-    
 
 
     <!-- footer  -->
@@ -245,26 +294,22 @@
           <h3>CONTACT</h3> <br>
           <br>
           <br>
-          
              CAVENCO.CO.UK <!--needs to be a link-->
             <br>
             <br>
-
             TEL:   01992 712 333 <br>
           <br>
           EMAIL:   C-J-CARSALES@OUTLOOK.COM <br>
           <br> <i class="fab fa-facebook-f"></i> <br>
       </div>
 
-        
-
-
-      
-      
       </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <!-- <script async defer crossorigin="anonymous" 
+            src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v11.0" nonce="jJEKazl6"></script> -->
+
 </body>
 </html>
