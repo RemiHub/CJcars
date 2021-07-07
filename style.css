@@ -148,14 +148,20 @@ option {
 .main-nav li a {
   color: black;
   text-decoration: none;
-  padding: 5px 180px;
+  padding: 5px 5em;
   font-size: 2.8em;
   font-weight: bolder;
+  
 }
 
 .main-nav li a:hover {
   /*border: 1px solid white;*/
   opacity: 0.3;
+}
+
+.nav-space{
+  height: 4vh;
+  background-color: rgb(223, 19, 19);
 }
 
 .clicked{
@@ -178,7 +184,7 @@ option {
   flex-wrap: wrap;
   padding: 0 4px;
   width: 100%;
-  height: 80vh;
+  height: 40vh;
 }
 
 
@@ -346,8 +352,9 @@ option {
 
 
 .under-row-section{
+  margin-top: 20%;
   background-color: darkgrey;
-  height: 25vh;
+  height: 20vh;
 
 }
 
@@ -379,17 +386,17 @@ option {
 #p1 {
   
   display: flex;
-  color: rgb(24, 42, 59);
+  /* color: rgb(24, 42, 59); */
   font-size: 3em;
-  font-weight: 900;
-  /* justify-content: center; */
+  font-weight:500;
+  justify-content: center;
   text-align: center;
-  border-right: 1px solid rgb(24, 42, 59);
-  width: 33%;
+  /* border-right: 1px solid rgb(24, 42, 59); */
+  /* width: 33%; */
   height: 90vh;
-  float: left;
+  /* float: left; */
   padding: 2em;
-
+  color: white;
   /*height: 10vh;*/
 }
 
@@ -401,13 +408,13 @@ option {
   float: left;
 } */
 
-
+/* 
 #p2 {
   display: flex;
   color: rgb(24, 42, 59);
   font-size: 3em;
   font-weight: 900;
-  /* justify-content: space-evenly; */
+  /* justify-content: space-evenly; 
   text-align: center;
   width: 33%;
   height: 90vh;
@@ -418,7 +425,7 @@ option {
 
 #p3 {
   display: flex;
-  /* justify-content: center; */
+  /* justify-content: center; 
   color: rgb(24, 42, 59);
   font-size: 3em;
   font-weight: 900;
@@ -427,7 +434,7 @@ option {
   height: 90vh;
   float: left;
   padding: 2em;
-}
+} */
 
 /* flip info design  */
 
@@ -438,48 +445,9 @@ option {
   color: white;
 }
 
-.banner {
-  text-transform: uppercase;
-  font-size: 40px;
-  text-align: center;
-}
 
-#car-lot {
-  /*background: url('roadlines.jpg') no-repeat; 
-    linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(roadlines.jpg);*/
-  background-color: white;
-}
-/* 
-.slideshow {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  padding: 20px;
-} */
-/* 
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-} */
 
-/* .dot {
-  cursor: pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
 
-.dot:hover {
-  background-color: #717171;
-} */
 
 /* Fading animation */
 .fade {
@@ -543,10 +511,7 @@ option {
 
 /* car page  */
 
-.nav-space{
-  height: 4vh;
-  background-color: red;
-}
+
 
 
 .grid-container-cars{
@@ -1097,12 +1062,12 @@ font-size: 0.8em;
 
 #p1 {
   font-size: 0.8em;
-  width: 33%;
+  /* width: 33%; */
   height: 60vh;
   padding: 1em;
 }
 
-
+/* 
 #p2 {
   font-size: 0.8em;
   width: 33%;
@@ -1116,7 +1081,7 @@ font-size: 0.8em;
   width: 33%;
   height: 60vh;
   padding: 1em;
-}
+} */
 
 
 /* flip info design  */
@@ -1546,12 +1511,12 @@ font-size: 0.9em;
 
 #p1 {
   font-size: 0.8em;
-  width: 33%;
+  /* width: 33%; */
   height: 60vh;
   padding: 1em;
 }
 
-
+/* 
 #p2 {
   font-size: 0.8em;
   width: 33%;
@@ -1565,7 +1530,7 @@ font-size: 0.9em;
   width: 33%;
   height: 60vh;
   padding: 1em;
-}
+} */
 
 
 /* flip info design  */
@@ -1794,12 +1759,12 @@ font-size: 1.1em;
     justify-content: center;
     border-radius: 5px;
     position: relative;
-    padding: 5px 1px auto auto;    
+    padding: 5px 1px 10px 20px;    
   }
   
   .search-bar {
     float: left;
-    padding: 5px;
+    padding: 10px 100px 0 0;
   }
   
   .search-bar-box {
@@ -1883,6 +1848,7 @@ font-size: 1.1em;
   vertical-align: middle;
   width: 100%;
   height: 42vh;
+  /* margin-bottom: 1%; */
   border-radius: 10px;
   /* border: 1px solid rgb(24, 42, 59); */
   position: relative;
@@ -1996,12 +1962,12 @@ font-size: 1.1em;
 
 #p1 {
   font-size: 0.8em;
-  width: 33%;
+  /* width: 33%; */
   height: 60vh;
   padding: 1em;
 }
 
-
+/* 
 #p2 {
   font-size: 0.8em;
   width: 33%;
@@ -2016,7 +1982,7 @@ font-size: 1.1em;
   height: 60vh;
   padding: 1em;
 }
-
+ */
 
 /* flip info design  */
 
@@ -2224,6 +2190,7 @@ font-size: 1.6em;
   .main-nav li a {
     padding: 4px 4px;
     font-size: 1.6em;
+    
   }
   
 
@@ -2234,10 +2201,10 @@ font-size: 1.6em;
 
 
   .search-box {
-    margin-top: 55%;
+    margin-top: 25%;
     margin-bottom: 25%;
     width: 50%;
-    height: 18%;
+    height: 25%;
     text-align: left;
     justify-content: center;
     border-radius: 5px;
@@ -2252,7 +2219,7 @@ font-size: 1.6em;
   
   .search-bar-box {
     margin: auto;
-    padding: 3px 100% 3px 5px;
+    padding: 3px 30% 3px 5px;
     font-size: 0.8em;
   }
   
@@ -2264,7 +2231,7 @@ font-size: 1.6em;
   
   .car-make {
     vertical-align: top;
-    padding: 5px 10px 0 10px;
+    padding: 15px 10px 10px 20px;
     font-size: 1em;
     float: left;
   }
@@ -2282,19 +2249,19 @@ font-size: 1.6em;
   .car-model {
     vertical-align: top;
     display: inline-block;
-    padding: 5px;
+    padding: 15px 10px 0 0;
   }
   
   .min {
     vertical-align: top;
     display: inline-block;
-    padding: 5px;
+    padding: 15px;
   }
   
   .max {
     vertical-align: top;
     display: inline-block;
-    padding: 5px;
+    padding: 15px;
   }
 
 
@@ -2320,10 +2287,12 @@ font-size: 1.6em;
 
 .column-text-container {
   margin-top: 1px;
+  /* margin-bottom: 10px; */
   padding: 15px;
   vertical-align: middle;
   width: 100%;
-  height: 40vh;
+  height: 50vh;
+  /* margin-bottom: 5%; */
   border-radius: 10px;
   /* border: 1px solid rgb(24, 42, 59); */
   position: relative;
@@ -2410,6 +2379,7 @@ font-size: 1.6em;
 }
 
 .under-row-section{
+  margin-top: 20%;
   height: 10vh;
 }
 
@@ -2434,13 +2404,12 @@ font-size: 1.6em;
 
 #p1 {
   font-size: 1em;
-  width: 33%;
+  /* width: 33%; */
   height: 60vh;
-  padding: 1em;
-  color: white;
+  padding: 2em;
 }
 
-
+/* 
 #p2 {
   font-size: 1em;
   width: 33%;
@@ -2456,7 +2425,7 @@ font-size: 1.6em;
   height: 60vh;
   padding: 1em;
   color: white;
-}
+} */
 
 
 /* flip info design  */
@@ -2685,10 +2654,10 @@ font-size: 2.2em;
 
 
   .search-box {
-    margin-top: 50%;
-    margin-bottom: 35%;
-    width: 75%;
-    height: 10%;
+    margin-top: 40%;
+    margin-bottom: 30%;
+    width: 59%;
+    height: 20%;
     text-align: left;
     justify-content: center;
     border-radius: 5px;
@@ -2703,13 +2672,13 @@ font-size: 2.2em;
   
   .search-bar-box {
     margin: auto;
-    padding: 5px 10% 5px 5px;
+    padding: 5px 10% 5px 15px;
     font-size: 1em;
   }
   
   .search-box button {
     padding: 10px 10px;          /*top right bottom left*/
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
     font-size: 1em;
   }
   
@@ -2774,7 +2743,7 @@ font-size: 2.2em;
   padding: 15px;
   vertical-align: middle;
   width: 100%;
-  height: 40vh;
+  height: 60vh;
   border-radius: 10px;
   /* border: 1px solid rgb(24, 42, 59); */
   position: relative;
@@ -2791,26 +2760,26 @@ font-size: 2.2em;
 }
 
 #details {
-  font-size: 3em;
+  font-size: 2.8em;
 }
 
 #details-more {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 #status {
-  font-size: 2em;
+  font-size: 1.8em;
   margin-top: 3%;
 }
 
 #price {
   margin-top: 8%;
   border-top: 0.5px solid rgb(24, 42, 59);
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 #description {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 
@@ -2861,6 +2830,7 @@ font-size: 2.2em;
 }
 
 .under-row-section{
+  margin-top: 40%;
   height: 12vh;
 }
 
@@ -2884,13 +2854,13 @@ font-size: 2.2em;
 
 #p1 {
   font-size: 1.5em;
-  width: 33%;
+  /* width: 33%; */
+  
   height: 60vh;
-  padding: 1em;
-  color: white;
+  padding: 2.5em;
 }
 
-
+/* 
 #p2 {
   font-size: 1.5em;
   width: 33%;
@@ -2906,7 +2876,7 @@ font-size: 2.2em;
   height: 60vh;
   padding: 1em;
   color: white;
-}
+} */
 
 
 /* flip info design  */
@@ -3108,30 +3078,3 @@ font-size: 2.8em;
 
 
 
-
-
-
-
-
-/* 
-
-@media screen and (max-width: 800px) {
-  /* header {
-      
-      background-image: url(cnj-logo.jpg);
-    } 
-  #p1,
-  #p2,
-  #p3 {
-    /* flex: 50%; 
-    /* max-width: 100%; 
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-
-  #row {
-    flex: 100%;
-    max-width: 100%;
-  }
-} */
