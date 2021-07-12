@@ -109,89 +109,7 @@ button.submit-again:hover{
 .first span {
   color: rgb(223, 19, 19);
 }
-/* 
-.search-box {
-  margin: 10% auto;
-  width: 65%;
-  height: 8%;
-  background-color: white;
-  opacity: 0.9;
-  border-radius: 10px;
-  position: relative;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  transform: translateY(-50%);
-  text-align: center;
-  padding: 10px;
-}
 
-.search-bar {
-  float: left;
-  padding: 15px;
-}
-
-.search-bar-box {
-  margin: auto auto;
-  padding: 4px;
-  font-size: 2em;
-}
-
-.search-box button {
-  float: right;
-  padding: 20px 10px;
-  margin-top: 2px;
-  margin-right: 10px;
-  background: #ddd;
-  font-size: 2em;
-  border: none;
-  cursor: pointer;
-}
-
-.car-make {
-  vertical-align: top;
- 
-  padding: 15px 10px;
-  font-size: 1.5em;
-  float: left;
-}
-
-#cars {
-  font-size: 1em;
-  padding: 10px;
-}
-
-
-option {
-  font-size: 1em;
-}
-
-.car-model {
-  vertical-align: top;
-  display: inline-block;
-  padding: 10px;
-}
-
-.min {
-  vertical-align: top;
-  display: inline-block;
-  padding: 10px;
-}
-
-.max {
-  vertical-align: top;
-  display: inline-block;
-  padding: 10px;
-} */
-
-/* .main-nav{
-    text-align:right;
-    list-style: none; */
-
-/*margin-top: 10px;*/
-/* } */
 
 .main-nav li {
   /*text-align: center;*/
@@ -212,7 +130,6 @@ option {
   padding: 5px 5em;
   font-size: 2.8em;
   font-weight: bolder;
-  
 }
 
 .main-nav li a:hover {
@@ -244,7 +161,6 @@ option {
   width: 100%;
   height: 40vh;
 }
-
 
 
 .column {
@@ -309,6 +225,7 @@ option {
   font-size: 1.3em;
 }
 
+
 /* slideshow  */
 
 /* Slideshow container */
@@ -318,9 +235,22 @@ option {
   position: relative;
   margin: auto;
 }
+/* 
+.slideshow-container2 {
+  max-width: 1000vw;
+  /* max-height: 50vh; 
+  position: relative;
+  margin: auto;
+} */
 
 /* Hide the images by default */
-.mySlides {
+/* .mySlides {
+  display: none;
+} */
+
+.mySlides, .mySlides2, .mySlides3, .mySlides4, .mySlides5
+.mySlides6, .mySlides7, .mySlides8, .mySlides9, .mySlides10,
+.mySlides11, .mySlides12 {
   display: none;
 }
 
@@ -340,14 +270,32 @@ option {
   user-select: none;
 }
 
+.prev2, .next2{
+  cursor: pointer;
+  /* position: absolute; */
+  top: 40%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(223, 19, 19);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
 /* Position the "next button" to the right */
-.next {
+.next, .next2 {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
+
+
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover, .next:hover,
+ .prev2:hover, .next2:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
@@ -402,7 +350,6 @@ option {
   margin-top: 20%;
   background-color: darkgrey;
   height: 20vh;
-
 }
 
 
@@ -576,7 +523,7 @@ option {
     width: 100%;
 }
 
-.grid-item {
+/* .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
@@ -591,16 +538,18 @@ option {
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
     0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.4);
-}
+} */
 
 .grid-item2{
+  /* margin: auto; */
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 30px;
   text-align: center;
-  height: 25em;
-    width: 25em;
+  /* height: 25em; */
+  /* height: auto; */
+  width: 25em;
   border-radius: 15px;
   border-top-left-radius: 50px; 
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
@@ -610,29 +559,113 @@ option {
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
+
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* 
+.cta-btn {
+  padding: 12px 30px;
+  font-size: 20px;
+} */
+
+/* .modal-container.show-modal {
+  display: block;
+  z-index: 5;
+} */
+
+
+
+
+/* .grid-item2.show-modal{
+  display: block;
+  z-index: 5;
+} */
+
+.modal {
+  /* display: none; Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 150; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  top: 50%;
+  left: 50%;
+  height: 70%;
+  max-width: 100%;
+  width: 1000px;
+  transform: translate(-50%, -50%);
+  overflow: auto; /* Enable scroll if needed */
+  animation-name: modalopen; 
+  animation-duration: var(--modal-duration);
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* 
+.modal{
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 900px;
+  /* z-index: 50; */
+  /* animation-name: modalopen; */
+  /* animation-duration: var(--modal-duration); */
+/* } */
+
+
+
+:root {
+  --modal-duration: 1s;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .zoom-left:hover{
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5) translate(20%); 
+  transform: scale(1.1) translate(20%); 
   /* margin-left: 150px; */
   z-index: 2;
-  
+  cursor: zoom-in;
 }
 
 .zoom-middle:hover{
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
+  transform: scale(1.1); 
   /* margin: 200px; */
   z-index: 2;
+  cursor: zoom-in;
 }
 
 .zoom-right:hover{
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5) translate(-20%); 
+  transform: scale(1.1) translate(-20%); 
   /* margin-right: 200px; */
   z-index: 2;
+  cursor: zoom-in;
 }
 
 .grid-details-container{

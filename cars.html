@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CnJ Cars</title>
+    <title>C&J Vehicles</title>
     <link rel="icon" type="image/gif/png" href="/favicon.jpg" >
     <link  rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
@@ -43,22 +43,22 @@
       
         <div class="mySlides fade">
           <img src="bmw.jpeg" style="width:100%">
-          <div class="text">Caption Two</div>
+          <div class="text"></div>
         </div>
       
         <div class="mySlides fade">
           <img src="cars1.jpg" style="width:100%">
-          <div class="text">Caption Three</div>
+          <div class="text"></div>
         </div>
 
         <div class="mySlides fade">
             <img src="cars1.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
+            <div class="text"></div>
           </div>
 
           <div class="mySlides fade">
             <img src="cars1.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
+            <div class="text"></div>
           </div>
 
       
@@ -87,21 +87,58 @@
                   Enim, voluptates. Voluptatibus, velit iusto sed animi aliquam fugit dignissimos 
                   voluptate magni tempora corporis commodi, cumque aspernatur eveniet facere esse, 
                   placeat eaque est soluta architecto similique sit ex. Asperiores laboriosam deleniti 
-                  nemo dolore tempore autem aperiam dolores libero sunt. Quo, pariatur totam.</div>
+                  nemo dolore tempore autem aperiam dolores libero sunt. Quo, pariatur totam.
+                </div>
       
                 <div id="price">£16,000</div>
                 </div>
             </div>  
         </div>
-            <div class="under-row-section"></div>
-            
-          </section>
 
+
+            <div class="under-row-section"></div>
+        </section>
+
+
+       <!-- <button class="cta-btn" id="open">Sign Up</button> -->
+
+
+
+        
+                
+                   
+       <div class="modal-container" id="modal"> 
+        <div class="modal">
+          <img id="modal-content" alt="">
+        </div>
+      </div>
+        
+              
+
+        <!-- selection of cars section  -->
 
           <section>
+            
               <div class="grid-container-cars">
+                
+               
+                
+                <div class="grid-item2 zoom-left" id="grid-item">
+                  <!-- <div class="slideshow-container2"> -->
+                     
+                
+                    
+      
+                  <div class="mySlides2 fade">
+                  <img src="cars1.jpg" width="100%" height="50%">
+                </div>
+              
+                <div class="mySlides2 fade">
+                  <img src="clio.jpeg" width="100%" height="50%">
 
-                <div class="grid-item2 zoom-left"><img src="cars1.jpg" width="100%" height="50%">
+                </div>
+              
+                  
                     <div class="grid-details-container">
                     <div id="grid-details">VW Golf GTI 2015 2.0L <br> </div>
                     <div id="grid-details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
@@ -111,127 +148,270 @@
                         officia vero quidem maxime nesciunt architecto voluptatem blanditiis ex.</div>
           
                     <div id="grid-price">£16,000</div>
-                </div>
-                </div>
-                <div class="grid-item2 zoom-middle"><img src="hatchback.jpg" width="100%" height="50%">
-                    <div class="grid-details-container">
-                    <div id="grid-details">VW Golf GTI 2015 2.0L <br> </div>
-                    <div id="grid-details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
-                    <div id="grid-status">SOLD</div>
-                    <br>
-                    <div id="grid-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                      Enim, voluptates. Voluptatibus, velit iusto sed animi aliquam fugit dignissimos 
-                      voluptate magni tempora corporis</div>
+                  
+                  
+                
+              </div>
+           
+              <a class="prev2" onclick="plusSlides2(-1, 0)">&#10094;</a>
+              <a class="next2" onclick="plusSlides2(1, 0)">&#10095;</a>
+                <!-- </div> -->
+              </div>
+           
+
+
+              <div class="grid-item2 zoom-middle" id="grid-item">
+                <!-- <div class="slideshow-container2"> -->
+                <div class="mySlides3 fade">
+                <img src="bmw.jpeg" width="100%" height="50%">
+              </div>
+            
+              <div class="mySlides3 fade">
+                <img src="clio.jpeg" width="100%" height="50%">
+
+              </div>
+                
+                  <div class="grid-details-container">
+                  <div id="grid-details">VW Golf GTI 2015 2.0L <br> </div>
+                  <div id="grid-details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
+                  <div id="grid-status">SOLD</div>
+                  <br>
+                  <div id="grid-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorum adipisci 
+                      officia vero quidem maxime nesciunt architecto voluptatem blanditiis ex.</div>
+        
+                  <div id="grid-price">£16,000</div>
+            </div>
+
+            <a class="prev2" onclick="plusSlides2(-1, 1)">&#10094;</a>
+            <a class="next2" onclick="plusSlides2(1, 1)">&#10095;</a>
+              <!-- </div> -->
+            </div>
+
+
+
+            <div class="grid-item2 zoom-right" id="grid-item">
+              <!-- <div class="slideshow-container2"> -->
+              <div class="mySlides4 fade">
+              <img src="hatchback.jpg" width="100%" height="50%">
+            </div>
           
-                    <div id="grid-price">£16,000</div>
+            <div class="mySlides4 fade">
+              <img src="clio.jpeg" width="100%" height="50%">
+
+            </div>
+              
+                <div class="grid-details-container">
+                <div id="grid-details">VW Golf GTI 2015 2.0L <br> </div>
+                <div id="grid-details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
+                <div id="grid-status">SOLD</div>
+                <br>
+                <div id="grid-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorum adipisci 
+                    officia vero quidem maxime nesciunt architecto voluptatem blanditiis ex.</div>
+      
+                <div id="grid-price">£16,000</div>
+          </div>
+
+          <a class="prev2" onclick="plusSlides2(-1, 2)">&#10094;</a>
+          <a class="next2" onclick="plusSlides2(1, 2)">&#10095;</a>
+            <!-- </div> -->
+          </div>
+
+
+                <div class="grid-item2 zoom-left" id="grid-item">
+                  <div class="mySlides5 fade">
+                    <img src="hatchback.jpg" width="100%" height="50%">
+                  </div>
+                
+                  <div class="mySlides5 fade">
+                    <img src="clio.jpeg" width="100%" height="50%">
+      
+                  </div>
+                    
+                      <div class="grid-details-container">
+                      <div id="grid-details">VW Golf GTI 2015 2.0L <br> </div>
+                      <div id="grid-details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
+                      <div id="grid-status">SOLD</div>
+                      <br>
+                      <div id="grid-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorum adipisci 
+                          officia vero quidem maxime nesciunt architecto voluptatem blanditiis ex.</div>
+            
+                      <div id="grid-price">£16,000</div>
                 </div>
+      
+                <a class="prev2" onclick="plusSlides2(-1, 3)">&#10094;</a>
+                <a class="next2" onclick="plusSlides2(1, 3)">&#10095;</a>
+                  <!-- </div> -->
                 </div>
-                <div class="grid-item2 zoom-right"><img src="bmw.jpeg" width="100%" height="50%">
-                    <div class="grid-details-container">
-                    <div id="grid-details">VW Golf GTI 2015 2.0L <br> </div>
-                    <div id="grid-details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
-                    <div id="grid-status">SOLD</div>
-                    <br>
-                    <div id="grid-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                      Enim, voluptates. Voluptatibus, velit iusto sed animi aliquam fugit dignissimos 
-                      voluptate magni tempora corporis</div>
-          
-                    <div id="grid-price">£16,000</div>
+
+
+                <div class="grid-item2 zoom-middle" id="grid-item">
+                  <div class="mySlides6 fade">
+                    <img src="bmw.jpeg" width="100%" height="50%">
+                  </div>
+                
+                  <div class="mySlides6 fade">
+                    <img src="clio.jpeg" width="100%" height="50%">
+      
+                  </div>
+                    
+                      <div class="grid-details-container">
+                      <div id="grid-details">VW Golf GTI 2015 2.0L <br> </div>
+                      <div id="grid-details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
+                      <div id="grid-status">SOLD</div>
+                      <br>
+                      <div id="grid-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorum adipisci 
+                          officia vero quidem maxime nesciunt architecto voluptatem blanditiis ex.</div>
+            
+                      <div id="grid-price">£16,000</div>
                 </div>
+      
+                <a class="prev2" onclick="plusSlides2(-1, 4)">&#10094;</a>
+                <a class="next2" onclick="plusSlides2(1, 4)">&#10095;</a>
+                  <!-- </div> -->
                 </div>
-                <div class="grid-item2 zoom-left"><img src="clio.jpeg" width="100%" height="50%">
-                    <div class="grid-details-container">
-                    <div id="grid-details">VW Golf GTI 2015 2.0L <br> </div>
-                    <div id="grid-details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
-                    <div id="grid-status">SOLD</div>
-                    <br>
-                    <div id="grid-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                      Enim, voluptates. Voluptatibus, velit iusto sed animi aliquam fugit dignissimos 
-                      voluptate magni tempora corporis</div>
-          
-                    <div id="grid-price">£16,000</div>
+
+
+
+                <div class="grid-item2 zoom-right" id="grid-item">
+                  <div class="mySlides7 fade">
+                    <img src="hatchback.jpg" width="100%" height="50%">
+                  </div>
+                
+                  <div class="mySlides7 fade">
+                    <img src="clio.jpeg" width="100%" height="50%">
+      
+                  </div>
+                    
+                      <div class="grid-details-container">
+                      <div id="grid-details">VW Golf GTI 2015 2.0L <br> </div>
+                      <div id="grid-details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
+                      <div id="grid-status">SOLD</div>
+                      <br>
+                      <div id="grid-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorum adipisci 
+                          officia vero quidem maxime nesciunt architecto voluptatem blanditiis ex.</div>
+            
+                      <div id="grid-price">£16,000</div>
                 </div>
+      
+                <a class="prev2" onclick="plusSlides2(-1, 5)">&#10094;</a>
+                <a class="next2" onclick="plusSlides2(1, 5)">&#10095;</a>
+                  <!-- </div> -->
                 </div>
-                <div class="grid-item2 zoom-middle"><img src="cnj-logo.jpg" width="100%" height="50%">
-                    <div class="grid-details-container">
-                    <div id="grid-details">VW Golf GTI 2015 2.0L <br> </div>
-                    <div id="grid-details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
-                    <div id="grid-status">SOLD</div>
-                    <br>
-                    <div id="grid-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                      Enim, voluptates. Voluptatibus, velit iusto sed animi aliquam fugit dignissimos 
-                      voluptate magni tempora corporis</div>
-          
-                    <div id="grid-price">£16,000</div>
+
+
+                <div class="grid-item2 zoom-left" id="grid-item">
+                  <div class="mySlides8 fade">
+                    <img src="cars1.jpg" width="100%" height="50%">
+                  </div>
+                
+                  <div class="mySlides8 fade">
+                    <img src="clio.jpeg" width="100%" height="50%">
+      
+                  </div>
+                    
+                      <div class="grid-details-container">
+                      <div id="grid-details">VW Golf GTI 2015 2.0L <br> </div>
+                      <div id="grid-details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
+                      <div id="grid-status">SOLD</div>
+                      <br>
+                      <div id="grid-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorum adipisci 
+                          officia vero quidem maxime nesciunt architecto voluptatem blanditiis ex.</div>
+            
+                      <div id="grid-price">£16,000</div>
                 </div>
+      
+                <a class="prev2" onclick="plusSlides2(-1, 6)">&#10094;</a>
+                <a class="next2" onclick="plusSlides2(1, 6)">&#10095;</a>
+                  <!-- </div> -->
                 </div>
-                <div class="grid-item2 zoom-right"><img src="saloon.jpg" width="100%" height="50%">
-                    <div class="grid-details-container">
-                    <div id="grid-details">VW Golf GTI 2015 2.0L <br> </div>
-                    <div id="grid-details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
-                    <div id="grid-status">SOLD</div>
-                    <br>
-                    <div id="grid-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                      Enim, voluptates. Voluptatibus, velit iusto sed animi aliquam fugit dignissimos 
-                      voluptate magni tempora corporis</div>
-          
-                    <div id="grid-price">£16,000</div>
+
+
+                <div class="grid-item2 zoom-middle" id="grid-item">
+                  <div class="mySlides9 fade">
+                    <img src="cars2.jpg" width="100%" height="50%">
+                  </div>
+                
+                  <div class="mySlides9 fade">
+                    <img src="clio.jpeg" width="100%" height="50%">
+      
+                  </div>
+                    
+                      <div class="grid-details-container">
+                      <div id="grid-details">VW Golf GTI 2015 2.0L <br> </div>
+                      <div id="grid-details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
+                      <div id="grid-status">SOLD</div>
+                      <br>
+                      <div id="grid-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorum adipisci 
+                          officia vero quidem maxime nesciunt architecto voluptatem blanditiis ex.</div>
+            
+                      <div id="grid-price">£16,000</div>
                 </div>
+      
+                <a class="prev2" onclick="plusSlides2(-1, 7)">&#10094;</a>
+                <a class="next2" onclick="plusSlides2(1, 7)">&#10095;</a>
+                  <!-- </div> -->
                 </div>
-                <div class="grid-item2 zoom-left"><img src="cars2.jpg" width="100%" height="50%">
-                    <div class="grid-details-container">
-                    <div id="grid-details">VW Golf GTI 2015 2.0L <br> </div>
-                    <div id="grid-details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
-                    <div id="grid-status">SOLD</div>
-                    <br>
-                    <div id="grid-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                      Enim, voluptates. Voluptatibus, velit iusto sed animi aliquam fugit dignissimos 
-                      voluptate magni tempora corporis</div>
-          
-                    <div id="grid-price">£16,000</div>
+
+
+                <div class="grid-item2 zoom-right" id="grid-item">
+                  <div class="mySlides10 fade">
+                    <img src="saloon.jpg" width="100%" height="50%">
+                  </div>
+                
+                  <div class="mySlides10 fade">
+                    <img src="clio.jpeg" width="100%" height="50%">
+      
+                  </div>
+                    
+                      <div class="grid-details-container">
+                      <div id="grid-details">VW Golf GTI 2015 2.0L <br> </div>
+                      <div id="grid-details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
+                      <div id="grid-status">SOLD</div>
+                      <br>
+                      <div id="grid-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorum adipisci 
+                          officia vero quidem maxime nesciunt architecto voluptatem blanditiis ex.</div>
+            
+                      <div id="grid-price">£16,000</div>
                 </div>
+      
+                <a class="prev2" onclick="plusSlides2(-1, 8)">&#10094;</a>
+                <a class="next2" onclick="plusSlides2(1, 8)">&#10095;</a>
+                  <!-- </div> -->
                 </div>
-                <div class="grid-item2 zoom-middle"><img src="hatchback.jpg" width="100%" height="50%">
-                    <div class="grid-details-container">
-                    <div id="grid-details">VW Golf GTI 2015 2.0L <br> </div>
-                    <div id="grid-details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
-                    <div id="grid-status">SOLD</div>
-                    <br>
-                    <div id="grid-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                      Enim, voluptates. Voluptatibus, velit iusto sed animi aliquam fugit dignissimos 
-                      voluptate magni tempora corporis</div>
-          
-                    <div id="grid-price">£16,000</div>
+
+
+                <div class="grid-item2 zoom-left" id="grid-item">
+                  <div class="mySlides11 fade">
+                    <img src="cnj-logo.jpg" width="100%" height="50%">
+                  </div>
+                
+                  <div class="mySlides11 fade">
+                    <img src="clio.jpeg" width="100%" height="50%">
+      
+                  </div>
+                    
+                      <div class="grid-details-container">
+                      <div id="grid-details">VW Golf GTI 2015 2.0L <br> </div>
+                      <div id="grid-details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
+                      <div id="grid-status">SOLD</div>
+                      <br>
+                      <div id="grid-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorum adipisci 
+                          officia vero quidem maxime nesciunt architecto voluptatem blanditiis ex.</div>
+            
+                      <div id="grid-price">£16,000</div>
                 </div>
-                </div>
-                <div class="grid-item2 zoom-right"><img src="cars1.jpg" width="100%" height="50%">
-                    <div class="grid-details-container">
-                    <div id="grid-details">VW Golf GTI 2015 2.0L <br> </div>
-                    <div id="grid-details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
-                    <div id="grid-status">SOLD</div>
-                    <br>
-                    <div id="grid-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                      Enim, voluptates. Voluptatibus, velit iusto sed animi aliquam fugit dignissimos 
-                      voluptate magni tempora corporis</div>
-          
-                    <div id="grid-price">£16,000</div>
-                </div>
-                </div>
-                <div class="grid-item2 zoom-left"><img src="hatchback.jpg" width="100%" height="50%">
-                    <div class="grid-details-container">
-                    <div id="grid-details">VW Golf GTI 2015 2.0L <br> </div>
-                    <div id="grid-details-more"> <br>Fuel Type: Petrol, <br> Mileage: 65,000, <br> Transmission: Automatic</div>
-                    <div id="grid-status">SOLD</div>
-                    <br>
-                    <div id="grid-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                      Enim, voluptates. Voluptatibus, velit iusto sed animi aliquam fugit dignissimos 
-                      voluptate magni tempora corporis</div>
-          
-                    <div id="grid-price">£16,000</div>
-                </div>
-                </div>
+      
+                <a class="prev2" onclick="plusSlides2(-1, 9)">&#10094;</a>
+                <a class="next2" onclick="plusSlides2(1, 9)">&#10095;</a>
+                  <!-- </div> -->
+                <!-- </div>
+                  
+                </div> -->
+              </div>
+            
               </div>
           </section>
+
 
 
           <!-- footer  -->
@@ -289,6 +469,7 @@
 
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
           <script type="text/javascript" src="script.js"></script>
+          <!-- <script type="module" src="webpack.config.js"></script> -->
 
 </body>
 </html>
