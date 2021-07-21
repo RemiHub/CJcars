@@ -282,7 +282,7 @@ button.submit-again:hover{
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: rgb(223, 19, 19);
+  color: rgb(161, 85, 85);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -497,6 +497,10 @@ button.submit-again:hover{
   background-color: black;
   color: white;
   font-size: 30px;
+}
+
+.flip-box-front span{
+  color: rgb(223, 19, 19);
 }
 
 .flip-box-back {
@@ -772,6 +776,7 @@ font-size: 0.8em;
 }
 
 .opening-hours{
+  word-spacing: 15px;
   display: flex;
   top: 20px;
   justify-content: center;
@@ -784,6 +789,7 @@ font-size: 0.8em;
 }
 
 .opening-hours h3{
+  word-spacing: 0;
   left: 7%;
   justify-content: center;
   text-align: left;
@@ -841,13 +847,24 @@ font-size: 0.8em;
   bottom: 9em;
 }
 
-.fa-facebook-f{
+.footer-contact a{
   left: 5%;
   justify-content: center;
   text-align: left;
   position: absolute;
   padding: 10px;
-  bottom: 9em;
+  bottom: 7em;
+  color: rgb(38, 62, 197);
+  cursor: pointer;
+}
+
+.fa-facebook-f{
+  left: 5%;
+  justify-content: center;
+  text-align: left;
+  position: absolute;
+  padding: 5px;
+  bottom: 2.2em;
   color: rgb(38, 62, 197);
   cursor: pointer;
 }
