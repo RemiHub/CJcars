@@ -15,7 +15,7 @@
         <div class="main-nav">
             <ul>
                 <li><a href="index.html"> Home </a></li>
-                <li><a class="clicked" href="cars.html"> Cars </a></li>
+                <li><a class="clicked" href="cars.html"> Showroom </a></li>
                 <li><a href="contact.html"> Contact Us </a></li>
             </ul>
         </div>
@@ -99,11 +99,11 @@
             <div class="under-row-section">
 
               
-  <form>
+  <form id="form">
 
     <div class="form-box-container">
       <div class="form-box">
-        <input type="text" placeholder="Search cars..." name="search" class="search">
+        <input type="input" placeholder="Search cars..." id="carInput" name="search" class="search">
       </div>
       <div class="form-box">
         <label for="car-make">CAR MAKE:</label>
@@ -123,7 +123,7 @@
         </select>
       </div>
       <div class="form-box">
-        <label for="max">MIN:</label>
+        <label for="max">    MIN:</label>
         <!-- <input type="text" id="max-value"> -->
         <select name="" id="min-value">
           <option value="one">£1000</option>
@@ -133,7 +133,7 @@
         </select>
       </div>
       <div class="form-box">
-        <label for="min">MAX:</label>
+        <label for="min">      MAX:</label>
         <!-- <input type="text" id="min-value"> -->
         <select name="" id="max-value">
           <!-- <option value="one">£1000</option> -->
@@ -141,10 +141,11 @@
           <option value="five">£5000</option>
           <option value="ten">£10000</option>
         </select>
-        <button type="button" class="submit-again">FIND</button>
+        
       </div>
       <!-- <button type="button" class="submit-again">FIND</button> -->
-      <button type="submit"><i class="submit"></i></button>
+      <button type="button" class="submit-again">FIND</button>
+      <!-- <button type="submit"><i class="submit"></i></button> -->
     </div>
 
   </form>
@@ -171,7 +172,7 @@
 
           <section>
             
-              <div class="grid-container-cars">
+              <div class="grid-container-cars" id="grid-container">
                 
                
                 
@@ -320,7 +321,7 @@
                 <a class="prev2" onclick="plusSlides2(-1, 4)">&#10094;</a>
                 <a class="next2" onclick="plusSlides2(1, 4)">&#10095;</a>
                   <!-- </div> -->
-                </div>
+              </div>
 
 
 
@@ -521,7 +522,7 @@
 
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
           <script type="text/javascript" src="script.js"></script>
-          <script type="text/javascript" src="carScript.js"></script>
+          <script type="text/javascript" src="carScripts.js"></script>
           <!-- <script type="module" src="webpack.config.js"></script> -->
 
 </body>

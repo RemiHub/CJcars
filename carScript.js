@@ -205,6 +205,45 @@ document.addEventListener("DOMContentLoaded", afterDocLoads);
 
 
 
+function myFunction(){
+
+ 
+  const carList = document.querySelectorAll('#car-make');
+  options = [];
+
+  
+  carList.forEach(e=>{
+    var words = e.innerHTML;
+    options.push(words);
+  })
+
+  arrange the array to not have duplicates and in alphabetical order
+  var finalArr = options;
+  console.log(finalArr);
+
+
+  const searchBar = document.forms["form"].querySelector('input');
+  // console.log(searchBar)
+
+  searchBar.addEventListener('keyup', function(e){
+    // console.log(e.target.value)
+    const term = e.target.value.toLowerCase();
+    // console.log(term)
+    const cars = carList.getElementsByTagName('span');
+    // cars.forEach(e=>{
+    //   console.log(e)
+    // })
+    // console.log(cars);
+
+    Array.from(carList).forEach(function(car){
+      console.log(car);
+      // const make = car.firstElementChild.textContent;
+      // console.log(make)
+    })
+  })
+  
+
+}
 
 
 
